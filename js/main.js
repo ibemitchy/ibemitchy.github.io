@@ -18,7 +18,7 @@ function init() {
     });
 }
 function expandProject() {
-    $(".preview-container").on("click", function (e) {
+    $(".preview-container").on("click", function () {
         var modalContainer = $(this).parent().find(".modal-container");
         modalContainer.css("display", "flex");
         currModal = modalContainer.find(".modal-icon-container");
@@ -26,7 +26,7 @@ function expandProject() {
     });
 }
 function collapseProject() {
-    $(".modal-return, .modal-close").on("click", function (e) {
+    $(".modal-return, .modal-close").on("click", function () {
         $(".modal-container").css("display", "none");
         $("body").removeClass("overflow-hidden");
     });
@@ -38,7 +38,7 @@ function collapseProject() {
     });
 }
 function navBar() {
-    $document.on("scroll", function (e) {
+    $document.on("scroll", function () {
         if ($document.scrollTop() >= 0.25 * $(window).height()) {
             $("nav").removeClass("big-nav").addClass("mini-nav");
         }

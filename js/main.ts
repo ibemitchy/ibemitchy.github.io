@@ -2,7 +2,7 @@ let $document = $(document);
 let currModal = null;
 
 function init(): void {
-    $document.ready(function () {
+    $document.ready(function (): void {
         navBar();
         displayChart();
         smoothScroll();
@@ -11,18 +11,18 @@ function init(): void {
         setAspectRatio();
         clickResume();
 
-        $(window).resize(function () {
+        $(window).resize(function (): void {
             setAspectRatio();
         });
 
-        $(window).on("click", function () {
+        $(window).on("click", function (): void {
             setAspectRatio();
         });
     });
 }
 
 function expandProject(): void {
-    $(".preview-container").on("click", function (e) {
+    $(".preview-container").on("click", function (): void {
         let modalContainer = $(this).parent().find(".modal-container");
 
         modalContainer.css("display", "flex");
@@ -32,12 +32,12 @@ function expandProject(): void {
 }
 
 function collapseProject(): void {
-    $(".modal-return, .modal-close").on("click", function (e) {
+    $(".modal-return, .modal-close").on("click", function (): void {
         $(".modal-container").css("display", "none");
         $("body").removeClass("overflow-hidden");
     });
 
-    $(document).keyup(function(e) {
+    $(document).keyup(function (e): void {
         if (e.keyCode === 27) {
             $(".modal-container").css("display", "none");
             $("body").removeClass("overflow-hidden");
@@ -46,7 +46,7 @@ function collapseProject(): void {
 }
 
 function navBar(): void {
-    $document.on("scroll", function (e) {
+    $document.on("scroll", function (): void {
         if ($document.scrollTop() >= 0.25 * $(window).height()) {
             $("nav").removeClass("big-nav").addClass("mini-nav");
         } else {
@@ -56,14 +56,14 @@ function navBar(): void {
 }
 
 function smoothScroll(): void {
-    $("a[href^='#']").on("click", function (e) {
+    $("a[href^='#']").on("click", function (e): void {
         e.preventDefault();
 
         let target = this.hash;
         let $target = $(target);
         $("html, body").animate({
             scrollTop: $target.offset().top
-        }, 250, "swing", function () {
+        }, 250, "swing", function (): void {
             window.location.hash = target;
         });
     });
@@ -151,7 +151,7 @@ function displayChart(): void {
 }
 
 function clickResume(): void {
-    $("#resume-button").on("click", function(): void {
+    $("#resume-button").on("click", function (): void {
         $(this).css("display", "none");
         $(".experience-button").css("display", "flex");
     });

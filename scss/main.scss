@@ -456,9 +456,6 @@ section {
                                     &:before {
                                         align-items: center;
                                         color: rgba(255, 255, 255, 1);
-                                        font-family: fontawesome;
-                                        //content: "test";
-                                        //font-family: Helvetica;
                                         height: 100%;
                                         justify-content: center;
                                         position: absolute;
@@ -471,15 +468,17 @@ section {
 
                                 .modal-bitbucket:before {
                                     content: "\f171";
+                                    font-family: fab;
                                 }
 
                                 .modal-return:before {
                                     content: "\f060";
+                                    font-family: fas;
                                 }
 
                                 &:hover {
                                     span:before {
-                                        transform: translate(-65%, 0%);
+                                        transform: translate(-62.5%, 0%);
                                     }
                                 }
                             }

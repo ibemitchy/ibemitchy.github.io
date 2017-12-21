@@ -39,8 +39,13 @@ $email-color: rgba(255, 120, 0, 1);
 $email-color-0: rgba(255, 120, 0, 0);
 
 @font-face {
-    font-family: fontawesome;
-    src: url("../fonts/fontawesome-webfont.woff");
+    font-family: fab;
+    src: url("../fonts/fa-brands-400.woff");
+}
+
+@font-face {
+    font-family: fas;
+    src: url("../fonts/fa-solid-900.woff");
 }
 
 @mixin animate($speed) {

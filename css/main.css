@@ -3,8 +3,11 @@
 /* Projects */
 /* Contact */
 @font-face {
-  font-family: fontawesome;
-  src: url("../fonts/fontawesome-webfont.woff"); }
+  font-family: fab;
+  src: url("../fonts/fa-brands-400.woff"); }
+@font-face {
+  font-family: fas;
+  src: url("../fonts/fa-solid-900.woff"); }
 /* Icon Animations ****************************************************************************************************/
 /* Website */
 /* Games */
@@ -510,7 +513,6 @@ section {
               #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button span:before {
                 align-items: center;
                 color: white;
-                font-family: fontawesome;
                 height: 100%;
                 justify-content: center;
                 position: absolute;
@@ -519,11 +521,13 @@ section {
                 transition: all 0.2s linear 0s;
                 width: 100%; }
             #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button .modal-bitbucket:before {
-              content: "\f171"; }
+              content: "\f171";
+              font-family: fab; }
             #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button .modal-return:before {
-              content: "\f060"; }
+              content: "\f060";
+              font-family: fas; }
             #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button:hover span:before {
-              transform: translate(-65%, 0%); }
+              transform: translate(-62.5%, 0%); }
           #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-close {
             align-items: center;
             border-radius: 50%;
