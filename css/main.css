@@ -10,7 +10,6 @@
 /* Games */
 /* Mind the Gap */
 /* InsightUBC */
-/* GSMS */
 body {
   font: 100% Helvetica, sans-serif;
   padding: 0;
@@ -519,8 +518,8 @@ section {
                 transform: translate(-100%, 0%);
                 transition: all 0.2s linear 0s;
                 width: 100%; }
-            #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button .modal-github:before {
-              content: "\f09b"; }
+            #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button .modal-bitbucket:before {
+              content: "\f171"; }
             #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button .modal-return:before {
               content: "\f060"; }
             #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button:hover span:before {
@@ -794,17 +793,17 @@ a {
         top: 0;
         transition: all 0.2s linear 0s;
         width: 100%; }
-    #contact .contact-item #github {
+    #contact .contact-item #bitbucket {
       color: #6e5494;
       transition: all 0.2s linear 0s;
       position: relative;
       overflow: hidden; }
-      #contact .contact-item #github:before {
-        content: "github.com/ibemitchy"; }
-      #contact .contact-item #github:hover {
+      #contact .contact-item #bitbucket:before {
+        content: "bitbucket.org/mitchma"; }
+      #contact .contact-item #bitbucket:hover {
         color: rgba(110, 84, 148, 0);
         width: 10em; }
-        #contact .contact-item #github:hover:before {
+        #contact .contact-item #bitbucket:hover:before {
           color: #6e5494; }
     #contact .contact-item #email {
       color: #ff7800;
