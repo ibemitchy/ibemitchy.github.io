@@ -1,0 +1,577 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 680 310" style="enable-background:new 0 0 680 310;" xml:space="preserve">
+
+<style type="text/css">
+	.st0 {
+        fill: #EE1E3A;
+    }
+
+	.st1 {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 30;
+        stroke-miterlimit: 10;
+    }
+
+    #H-L {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: H-L-M 20s ease forwards;
+    }
+
+    #H-M {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        animation: H-M-M 9s ease forwards;
+    }
+
+    #H-R {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: H-R-M 13s ease forwards;
+    }
+
+    @keyframes H-L-M {
+        0% {
+            stroke-dashoffset: 140;
+        }
+        5% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes H-M-M {
+        0% {
+            stroke-dashoffset: 70;
+        }
+        5% {
+            stroke-dashoffset: 70;
+        }
+        10% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes H-R-M {
+        0% {
+            stroke-dashoffset: 140;
+        }
+        5% {
+            stroke-dashoffset: 140;
+        }
+        10% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* E Animation */
+
+    #E-L {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: E-L-M 20s ease forwards;
+    }
+
+    #E-T {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        animation: E-T-M 10s ease forwards;
+    }
+
+    #E-M {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 60;
+        animation: E-M-M 10s ease forwards;
+    }
+
+    #E-B {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        animation: E-B-M 10s ease forwards;
+    }
+
+    @keyframes E-L-M {
+        0% {
+            stroke-dashoffset: 140;
+        }
+        2% {
+            stroke-dashoffset: 140;
+        }
+        6% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes E-T-M {
+        0% {
+            stroke-dashoffset: 70;
+        }
+        6% {
+            stroke-dashoffset: 70;
+        }
+        11% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes E-M-M {
+        0% {
+            stroke-dashoffset: 60;
+        }
+        8% {
+            stroke-dashoffset: 60;
+        }
+        13% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes E-B-M {
+        0% {
+            stroke-dashoffset: 70;
+        }
+        11% {
+            stroke-dashoffset: 70;
+        }
+        16% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* L1 Animation */
+
+    #L1-L {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: L1-L-M 20s ease forwards;
+    }
+
+    #L1-B {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        animation: L1-B-M 10s ease forwards;
+    }
+
+    @keyframes L1-L-M {
+        0% {
+            stroke-dashoffset: 140;
+        }
+        2% {
+            stroke-dashoffset: 140;
+        }
+        7% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes L1-B-M {
+        0% {
+            stroke-dashoffset: 70;
+        }
+        13% {
+            stroke-dashoffset: 70;
+        }
+        18% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* L2 Animation */
+
+    #L2-L {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: L2-L-M 20s ease forwards;
+    }
+
+    #L2-B {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        animation: L2-B-M 10s ease forwards;
+    }
+
+    @keyframes L2-L-M {
+        0% {
+            stroke-dashoffset: 140;
+        }
+        3% {
+            stroke-dashoffset: 140;
+        }
+        8% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes L2-B-M {
+        0% {
+            stroke-dashoffset: 70;
+        }
+        15% {
+            stroke-dashoffset: 70;
+        }
+        20% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* O1 Animation */
+
+    #O1-L {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 350;
+        animation: O1-M 20s ease forwards;
+    }
+
+    @keyframes O1-M {
+        0% {
+            stroke-dashoffset: 350;
+        }
+        4% {
+            stroke-dashoffset: 350;
+        }
+        9% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* W Animation */
+
+    #W-L {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: W-L-M 25s ease forwards;
+    }
+
+    #W-M {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        animation: W-M-M 9s ease forwards;
+    }
+
+    #W-R {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: W-R-M 13s ease forwards;
+    }
+
+    @keyframes W-L-M {
+        3% {
+            stroke-dashoffset: 140;
+        }
+        8% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes W-M-M {
+        15% {
+            stroke-dashoffset: 70;
+        }
+        25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes W-R-M {
+        5% {
+            stroke-dashoffset: 140;
+        }
+        10% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* O2 Animation */
+
+    #O2-L {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 350;
+        animation: O2-M 20s ease forwards;
+    }
+
+    @keyframes O2-M {
+        0% {
+            stroke-dashoffset: -350;
+        }
+        3% {
+            stroke-dashoffset: -230;
+        }
+        6% {
+            stroke-dashoffset: -115;
+        }
+        9% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* R Animation */
+
+    #R-L {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: R-L-M 15s ease forwards;
+    }
+
+    #R-C {
+        stroke-dasharray: 160;
+        stroke-dashoffset: 160;
+        animation: R-C-M 9s ease forwards;
+    }
+
+    #R-B {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        animation: R-B-M 13s ease forwards;
+    }
+
+    @keyframes R-L-M {
+        5% {
+            stroke-dashoffset: 140;
+        }
+        10% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes R-C-M {
+        5% {
+            stroke-dashoffset: 160;
+        }
+        15% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes R-B-M {
+        8% {
+            stroke-dashoffset: 70;
+        }
+        13% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* L3 Animation */
+
+    #L3-L {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: L3-L-M 20s ease forwards;
+    }
+
+    #L3-B {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        animation: L3-B-M 10s ease forwards;
+    }
+
+    @keyframes L3-L-M {
+        0% {
+            stroke-dashoffset: 140;
+        }
+        5% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes L3-B-M {
+        8% {
+            stroke-dashoffset: 70;
+        }
+        13% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* D Animation */
+
+    #D-L {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: D-L-M 15s ease forwards;
+    }
+
+    #D-C {
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        animation: D-C-M 15s ease forwards;
+    }
+
+    @keyframes D-L-M {
+        5% {
+            stroke-dashoffset: 140;
+        }
+        10% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes D-C-M {
+        0% {
+            stroke-dashoffset: 200;
+        }
+        15% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* Red Dot Animation */
+
+    #Dot {
+        r: 0;
+        animation: Dot-M 20s ease forwards;
+    }
+
+    @keyframes Dot-M {
+        5% {
+            r: 0;
+        }
+        7.5% {
+            r: 35;
+        }
+        10% {
+            r: 25;
+        }
+        100% {
+            r: 25;
+        }
+    }
+
+    #Rod {
+        transform: scale(1, 0);
+        animation: Rod-M 15s ease forwards;
+    }
+
+    @keyframes Rod-M {
+        10% {
+            transform: scale(1, 0);
+        }
+        12.5% {
+            transform: scale(1, 1.05);
+        }
+        15% {
+            transform: scale(1, 1);
+        }
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+</style>
+    
+<g id="Exclamation">
+	<circle id="Dot" class="st0" cx="640" cy="255" r="25"/>
+	<polyline id="Rod" class="st0" points="594.5,68.2 664.5,20 640,210 	"/>
+</g>
+<g id="D">
+	<path id="D-C" class="st1" d="M514,175c93.3,0,93.3,110,0,110"/>
+	<line id="D-L" class="st1" x1="500" y1="160" x2="500" y2="300"/>
+</g>
+<g id="L3">
+	<line id="L3-B" class="st1" x1="400" y1="285" x2="470" y2="285"/>
+	<line id="L3-L" class="st1" x1="400" y1="160" x2="400" y2="300"/>
+</g>
+<g id="R">
+	<line id="R-B" class="st1" x1="331" y1="244.9" x2="359" y2="300"/>
+	<path id="R-C" class="st1" d="M299,175c80,0,80,75,0,75"/>
+	<line id="R-L" class="st1" x1="285" y1="160" x2="285" y2="300"/>
+</g>
+<g id="O2">
+	<circle id="O2-L" class="st1" cx="195" cy="229.5" r="55"/>
+</g>
+<g id="W">
+	<line id="W-R" class="st1" x1="105" y1="160" x2="105" y2="300"/>
+	<line id="W-M" class="st1" x1="60" y1="220" x2="60" y2="290"/>
+	<line id="W-L" class="st1" x1="15" y1="160" x2="15" y2="300"/>
+</g>
+<g id="O1">
+	<circle id="O1-L" class="st1" cx="475" cy="70.5" r="55"/>
+</g>
+<g id="L2">
+	<line id="L2-B" class="st1" x1="330" y1="125" x2="400" y2="125"/>
+	<line id="L2-L" class="st1" x1="330" y1="0" x2="330" y2="140"/>
+</g>
+<g id="L1">
+	<line id="L1-B" class="st1" x1="230" y1="125" x2="300" y2="125"/>
+	<line id="L1-L" class="st1" x1="230" y1="0" x2="230" y2="140"/>
+</g>
+<g id="E">
+	<line id="E-B" class="st1" x1="130" y1="125" x2="200" y2="125"/>
+	<line id="E-M" class="st1" x1="130" y1="70" x2="190" y2="70"/>
+	<line id="E-T" class="st1" x1="130" y1="15" x2="200" y2="15"/>
+	<line id="E-L" class="st1" x1="130" y1="0" x2="130" y2="140"/>
+</g>
+<g id="H">
+	<line id="H-R" class="st1" x1="85" y1="0" x2="85" y2="140"/>
+	<line id="H-M" class="st1" x1="15" y1="70" x2="85" y2="70"/>
+	<line id="H-L" class="st1" x1="15" y1="0" x2="15" y2="140"/>
+</g>
+</svg>

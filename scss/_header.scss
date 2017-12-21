@@ -1,0 +1,154 @@
+
+$animation-speed: 0.3s;
+$nav-bar-height: 6rem;
+$white: rgba(255, 255, 255, 1);
+
+$home-color: rgba(252, 173, 38, 1);
+
+/* About */
+$about-color: rgba(46, 204, 113, 1);
+$about-last-name: rgba(36, 159, 86, 1);
+$about-text: rgba(35, 35, 35, 1);
+
+/* Experience */
+$experience-color: rgba(69, 147, 227, 1);
+$experience-resume: rgba(34, 111, 190, 1);
+$experience-resume-o: rgba(34, 111, 190, 0.8);
+
+/* Projects */
+$projects-color: rgba(130, 58, 160, 1);
+$proj-dimension: 22em;
+
+$preview-container-border: 0.5em;
+$preview-container-height: 12em;
+$preview-container-width: 20em;
+$preview-overlay-background-color: rgba(0, 0, 0, 0.7);
+$preview-overlay-text-color: rgba(255, 255, 255, 1);
+$p1c1: rgba(130, 58, 160, 1);
+$p1c2: rgba(194, 90, 225, 1);
+$p1c2-0: rgba(194, 90, 225, 0.8);
+$p1c3: rgba(255, 255, 255, 1);
+
+
+/* Contact */
+$contact-color: rgba(35, 35, 35, 1);
+$font-color: rgba(255, 255, 255, 1);
+$highlight-color: rgba(230, 90, 90, 1);
+$bitbucket-color: rgba(110, 84, 148, 1);
+$bitbucket-color-0: rgba(110, 84, 148, 0);
+$facebook-color: rgba(59, 89, 152, 1);
+$email-color: rgba(255, 120, 0, 1);
+$email-color-0: rgba(255, 120, 0, 0);
+
+@font-face {
+    font-family: fontawesome;
+    src: url("../fonts/fontawesome-webfont.woff");
+}
+
+@mixin animate($speed) {
+    -moz-transition: all $speed;
+    -ms-transition: all $speed;
+    -o-transition: all $speed;
+    -webkit-transition: all $speed;
+    transition: all $speed;
+}
+
+@mixin unselectable() {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin setNavEntry($nav, $color) {
+    #{$nav} {
+        &:hover {
+            background: $color;
+        }
+    }
+}
+
+@mixin setProjEntry($proj, $c1, $c2, $c3, $cContainer) {
+    #{$proj} {
+        .preview-container {
+            border: $c2 solid $cContainer;
+        }
+
+        .modal-container {
+            background: $c1;
+
+            .modal-content {
+                .modal-title, .modal-subtitle {
+                    color: $c2;
+                }
+
+                .modal-buttons {
+                    .modal-button {
+                        @include animate($animation-speed);
+                        background: $c2;
+                        color: $c3;
+                        opacity: 0.8;
+
+                        &:hover {
+                            @include animate($animation-speed);
+                            background: $c2;
+                            opacity: 1;
+                        }
+                    }
+
+                    .modal-close {
+                        color: $c2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Icon Animations ****************************************************************************************************/
+
+/* Website */
+$init-cursor-x: 60%;
+$init-cursor-y: -10%;
+$mid-cursor-x: 8%;
+$mid-cursor-y: -30%;
+$end-cursor-x: -20%;
+$end-cursor-y: 10%;
+
+/* Games */
+$alien-pos-x: 40%;
+$alien-pos-y: -30%;
+
+/* Mind the Gap */
+@mixin animate-pointer($name, $fxn) {
+    .#{$name} {
+        animation: $fxn 3s linear infinite;
+
+        -webkit-transform-origin : 50% 100%;
+        -moz-transform-origin : 50% 100%;
+        -o-transform-origin : 50% 100%;
+        -ms-transform-origin : 50% 100%;
+    }
+}
+$p1-x: -26%;
+$p1-y: -83%;
+$p2-x: 35%;
+$p2-y: -86.5%;
+$p3-x: 11%;
+$p3-y: -69.5%;
+
+/* InsightUBC */
+@mixin animate-load($name, $fxn, $x, $y, $scale) {
+    .#{$name} {
+        animation: $fxn 3s linear infinite;
+        transform: translate($x, $y) scale($scale);
+    }
+}
+$load-y: 0%;
+$load-1-x: -10%;
+$load-2-x: 0%;
+$load-3-x: 10%;
+
+/* GSMS */

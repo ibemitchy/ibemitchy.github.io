@@ -1,0 +1,828 @@
+/* About */
+/* Experience */
+/* Projects */
+/* Contact */
+@font-face {
+  font-family: fontawesome;
+  src: url("../fonts/fontawesome-webfont.woff"); }
+/* Icon Animations ****************************************************************************************************/
+/* Website */
+/* Games */
+/* Mind the Gap */
+/* InsightUBC */
+/* GSMS */
+body {
+  font: 100% Helvetica, sans-serif;
+  padding: 0;
+  margin: 0; }
+
+/* Navigation *********************************************************************************************************/
+nav {
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1.5em;
+  opacity: 90;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+  nav a {
+    align-items: center;
+    color: #646464;
+    display: flex;
+    flex: 1 1 0;
+    font-variant: small-caps;
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  nav a[href="#home"]:hover {
+    background: #fcad26; }
+  nav a[href="#about"]:hover {
+    background: #2ecc71; }
+  nav a[href="#experience"]:hover {
+    background: #4593e3; }
+  nav a[href="#projects"]:hover {
+    background: #823aa0; }
+  nav a[href="#contact"]:hover {
+    background: #e65a5a; }
+
+.big-nav {
+  background: rgba(0, 0, 0, 0.25);
+  height: 6rem; }
+  .big-nav .nav-label {
+    color: white; }
+  .big-nav a > .nav-icon {
+    display: none; }
+
+.mini-nav {
+  height: 2.4rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .mini-nav a {
+    background: rgba(0, 0, 0, 0.8);
+    color: white; }
+    .mini-nav a .nav-icon {
+      display: none; }
+
+.place-holder {
+  height: 6rem; }
+
+section {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  top: 2.4rem; }
+  section .section-content {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.5em;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    section .section-content .section-title {
+      font-size: 4rem;
+      font-variant: small-caps;
+      margin: 1em 0 0 0; }
+
+/* Home ***************************************************************************************************************/
+#home {
+  background: url("../images/unsplash_andrew_collins.jpg") center center;
+  background-size: cover;
+  height: 100vh; }
+  #home object {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: center;
+    text-decoration: none; }
+
+/* About **************************************************************************************************************/
+#about {
+  background: #2ecc71;
+  min-height: 100vh; }
+  #about .section-content #about-name {
+    font-size: 4em;
+    font-variant: all-small-caps; }
+    #about .section-content #about-name #about-last-name {
+      color: #249f56; }
+  #about .section-content img {
+    border: solid white 0.1em;
+    border-radius: 15em;
+    max-width: 30em;
+    min-width: 10em;
+    width: 10vw;
+    margin: 1em; }
+  #about .section-content #about-description {
+    max-width: 35em;
+    text-align: center;
+    width: 90vw; }
+
+/* Experience *********************************************************************************************************/
+#experience {
+  background: #4593e3;
+  min-height: 100vh; }
+  #experience .section-content #experience-chart-container {
+    height: 50vh;
+    min-height: 10em;
+    min-width: 20em;
+    width: 60vw; }
+    #experience .section-content #experience-chart-container canvas {
+      width: 100%; }
+  #experience .section-content #experience-resume {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 4em;
+    margin: 1em 0;
+    width: 20em; }
+    #experience .section-content #experience-resume #resume-button {
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      align-items: center;
+      background: rgba(34, 111, 190, 0.8);
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      flex-flow: row nowrap;
+      font: inherit;
+      height: 100%;
+      justify-content: center;
+      outline: inherit !important;
+      padding: 0 !important;
+      width: 100%; }
+      #experience .section-content #experience-resume #resume-button:hover {
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #226fbe; }
+    #experience .section-content #experience-resume a {
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      align-items: center;
+      background: rgba(34, 111, 190, 0.8);
+      color: inherit;
+      cursor: pointer;
+      display: none;
+      flex: 1 1 0;
+      font-variant: small-caps;
+      height: 100%;
+      justify-content: center;
+      text-decoration: none;
+      width: 100%; }
+      #experience .section-content #experience-resume a:hover {
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #226fbe; }
+    #experience .section-content #experience-resume #view-resume:hover .fa-eye {
+      animation: animateShake 0.25s linear; }
+    #experience .section-content #experience-resume #download-resume:hover .fa-download {
+      animation: animateShake 0.25s linear; }
+
+@keyframes animateShake {
+  0% {
+    transform: translate(0%, 0%); }
+  25% {
+    transform: translate(0%, 25%); }
+  75% {
+    transform: translate(0%, -25%); }
+  100% {
+    transform: translate(0%, 0%); } }
+/* Projects ***********************************************************************************************************/
+#projects {
+  background: #823aa0;
+  min-height: 100vh; }
+  #projects .section-content .projs {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    #projects .section-content .projs #project-1 .preview-container {
+      border: #c25ae1 solid 0.5em; }
+    #projects .section-content .projs #project-1 .modal-container {
+      background: #823aa0; }
+      #projects .section-content .projs #project-1 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-1 .modal-container .modal-content .modal-subtitle {
+        color: #c25ae1; }
+      #projects .section-content .projs #project-1 .modal-container .modal-content .modal-buttons .modal-button {
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #c25ae1;
+        color: white;
+        opacity: 0.8; }
+        #projects .section-content .projs #project-1 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          background: #c25ae1;
+          opacity: 1; }
+      #projects .section-content .projs #project-1 .modal-container .modal-content .modal-buttons .modal-close {
+        color: #c25ae1; }
+    #projects .section-content .projs #project-2 .preview-container {
+      border: #c25ae1 solid 0.5em; }
+    #projects .section-content .projs #project-2 .modal-container {
+      background: #823aa0; }
+      #projects .section-content .projs #project-2 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-2 .modal-container .modal-content .modal-subtitle {
+        color: #c25ae1; }
+      #projects .section-content .projs #project-2 .modal-container .modal-content .modal-buttons .modal-button {
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #c25ae1;
+        color: white;
+        opacity: 0.8; }
+        #projects .section-content .projs #project-2 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          background: #c25ae1;
+          opacity: 1; }
+      #projects .section-content .projs #project-2 .modal-container .modal-content .modal-buttons .modal-close {
+        color: #c25ae1; }
+    #projects .section-content .projs #project-3 .preview-container {
+      border: #c25ae1 solid 0.5em; }
+    #projects .section-content .projs #project-3 .modal-container {
+      background: #823aa0; }
+      #projects .section-content .projs #project-3 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-3 .modal-container .modal-content .modal-subtitle {
+        color: #c25ae1; }
+      #projects .section-content .projs #project-3 .modal-container .modal-content .modal-buttons .modal-button {
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #c25ae1;
+        color: white;
+        opacity: 0.8; }
+        #projects .section-content .projs #project-3 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          background: #c25ae1;
+          opacity: 1; }
+      #projects .section-content .projs #project-3 .modal-container .modal-content .modal-buttons .modal-close {
+        color: #c25ae1; }
+    #projects .section-content .projs #project-4 .preview-container {
+      border: #c25ae1 solid 0.5em; }
+    #projects .section-content .projs #project-4 .modal-container {
+      background: #823aa0; }
+      #projects .section-content .projs #project-4 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-4 .modal-container .modal-content .modal-subtitle {
+        color: #c25ae1; }
+      #projects .section-content .projs #project-4 .modal-container .modal-content .modal-buttons .modal-button {
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #c25ae1;
+        color: white;
+        opacity: 0.8; }
+        #projects .section-content .projs #project-4 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          background: #c25ae1;
+          opacity: 1; }
+      #projects .section-content .projs #project-4 .modal-container .modal-content .modal-buttons .modal-close {
+        color: #c25ae1; }
+    #projects .section-content .projs #project-5 .preview-container {
+      border: #c25ae1 solid 0.5em; }
+    #projects .section-content .projs #project-5 .modal-container {
+      background: #823aa0; }
+      #projects .section-content .projs #project-5 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-5 .modal-container .modal-content .modal-subtitle {
+        color: #c25ae1; }
+      #projects .section-content .projs #project-5 .modal-container .modal-content .modal-buttons .modal-button {
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #c25ae1;
+        color: white;
+        opacity: 0.8; }
+        #projects .section-content .projs #project-5 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          background: #c25ae1;
+          opacity: 1; }
+      #projects .section-content .projs #project-5 .modal-container .modal-content .modal-buttons .modal-close {
+        color: #c25ae1; }
+    #projects .section-content .projs .project .preview-container {
+      display: flex;
+      flex-flow: column nowrap;
+      margin: 0.5em;
+      position: relative;
+      width: 95vw;
+      max-width: 20em;
+      max-height: 12em;
+      overflow: hidden; }
+      #projects .section-content .projs .project .preview-container .preview-content {
+        align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between; }
+        #projects .section-content .projs .project .preview-container .preview-content .icon {
+          position: relative;
+          width: 100%; }
+          #projects .section-content .projs .project .preview-container .preview-content .icon img {
+            position: absolute;
+            top: 0;
+            left: 0; }
+        #projects .section-content .projs .project .preview-container .preview-content .preview-overlay {
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          align-items: center;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          flex-flow: column nowrap;
+          height: 100%;
+          justify-content: space-around;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 100%; }
+          #projects .section-content .projs .project .preview-container .preview-content .preview-overlay .preview-title {
+            font-size: 1.5em;
+            font-variant: small-caps;
+            text-align: center; }
+            #projects .section-content .projs .project .preview-container .preview-content .preview-overlay .preview-title:after {
+              content: "";
+              display: block;
+              border: 0.01em solid white; }
+          #projects .section-content .projs .project .preview-container .preview-content .preview-overlay .preview-description {
+            text-align: center; }
+          #projects .section-content .projs .project .preview-container .preview-content .preview-overlay .preview-tags {
+            display: flex;
+            flex-flow: row wrap; }
+            #projects .section-content .projs .project .preview-container .preview-content .preview-overlay .preview-tags li {
+              background: #969696;
+              border-radius: 0.3em;
+              font-size: 0.5em;
+              margin: 0.1em 0.3em;
+              padding: 0.3em 0.8em; }
+      #projects .section-content .projs .project .preview-container:hover {
+        cursor: pointer; }
+        #projects .section-content .projs .project .preview-container:hover .preview-content .icon {
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          -webkit-filter: blur(3px);
+          filter: blur(3px); }
+        #projects .section-content .projs .project .preview-container:hover .preview-content .preview-overlay {
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          opacity: 1; }
+    #projects .section-content .projs .project .modal-container {
+      align-items: center;
+      display: none;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      left: 0;
+      margin: 0;
+      overflow-y: scroll;
+      padding: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 1; }
+      #projects .section-content .projs .project .modal-container .modal-content {
+        align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        margin: 0;
+        max-width: 36em;
+        width: 80%; }
+        #projects .section-content .projs .project .modal-container .modal-content .modal-title, #projects .section-content .projs .project .modal-container .modal-content .modal-subtitle {
+          font-variant: small-caps; }
+        #projects .section-content .projs .project .modal-container .modal-content .modal-title {
+          font-size: 2.5em;
+          margin: 0.5em 0 0.5em 0;
+          text-align: center; }
+        #projects .section-content .projs .project .modal-container .modal-content .modal-icon-container {
+          border: 2px solid black;
+          max-width: 20em;
+          width: 100%; }
+          #projects .section-content .projs .project .modal-container .modal-content .modal-icon-container .icon {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            width: 100%; }
+            #projects .section-content .projs .project .modal-container .modal-content .modal-icon-container .icon img {
+              position: absolute; }
+        #projects .section-content .projs .project .modal-container .modal-content .modal-subtitle {
+          font-size: 1.5em;
+          margin: 1em 0 0 0; }
+        #projects .section-content .projs .project .modal-container .modal-content .modal-description {
+          margin: 0.5em 0 0 0; }
+          #projects .section-content .projs .project .modal-container .modal-content .modal-description a {
+            color: white; }
+        #projects .section-content .projs .project .modal-container .modal-content .modal-subtitle, #projects .section-content .projs .project .modal-container .modal-content .modal-description {
+          align-self: flex-start; }
+        #projects .section-content .projs .project .modal-container .modal-content .modal-buttons {
+          align-items: center;
+          display: flex;
+          flex-flow: row wrap;
+          height: 3em;
+          min-height: 3em;
+          justify-content: center;
+          margin: 2em 0 5em 0;
+          width: 100%; }
+          #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button {
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            align-items: center;
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            flex: 1 1 0;
+            flex-flow: row nowrap;
+            font: inherit;
+            height: 100%;
+            justify-content: center;
+            margin: 0 1em;
+            max-width: 9em;
+            outline: inherit;
+            overflow: hidden;
+            position: relative; }
+            #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button span {
+              flex: 1 1 0;
+              text-align: center; }
+              #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button span:before {
+                align-items: center;
+                color: white;
+                font-family: fontawesome;
+                height: 100%;
+                justify-content: center;
+                position: absolute;
+                text-align: center;
+                transform: translate(-100%, 0%);
+                transition: all 0.2s linear 0s;
+                width: 100%; }
+            #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button .modal-github:before {
+              content: "\f09b"; }
+            #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button .modal-return:before {
+              content: "\f060"; }
+            #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button:hover span:before {
+              transform: translate(-65%, 0%); }
+          #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-close {
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            font-size: 1.5em;
+            height: 1.25em;
+            justify-content: center;
+            position: fixed;
+            right: 1em;
+            top: 1em;
+            width: 1.25em;
+            -webkit-transition: -webkit-transform .25s ease-in-out;
+            transition: transform .25s ease-in-out; }
+            #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-close:hover {
+              -webkit-transform: scale(1.5);
+              transform: scale(1.5); }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+/* Icon Animations ****************************************************************************************************/
+/* Website */
+.webpage-cursor {
+  transform: translate(-15%, -45%) rotate(-45deg) scale(0.1);
+  animation: animateCursor 5s linear infinite; }
+
+@keyframes animateCursor {
+  0% {
+    transform: translate(60%, -10%) rotate(-45deg) scale(0.1); }
+  10% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
+  24% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
+  27% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.075); }
+  30% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
+  40% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
+  52.5% {
+    transform: translate(-20%, 10%) rotate(-45deg) scale(0.1); }
+  100% {
+    transform: translate(-20%, 10%) rotate(-45deg) scale(0.1); } }
+/* Games */
+.game-icon .game-invader-A {
+  animation: animateInvaderA 4s linear infinite;
+  transform: scale(0.5) translate(40%, -30%);
+  opacity: 1; }
+.game-icon .game-invader-B {
+  animation: animateInvaderB 4s linear infinite;
+  transform: scale(0.5) translate(40%, -30%);
+  opacity: 0; }
+.game-icon .game-paddle {
+  transform: scale(0.3) translate(-90%, 600%); }
+.game-icon .game-ball {
+  animation: animateBall 7s linear infinite;
+  transform: scale(0.12) translate(-1500%, -600%); }
+
+@keyframes animateInvaderA {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  25.1% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  50.1% {
+    opacity: 1; }
+  75% {
+    opacity: 1; }
+  75.1% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes animateInvaderB {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  25.1% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  50.1% {
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  75.1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes animateBall {
+  0% {
+    transform: translate(-60%, -60%) scale(0.12) rotate(0deg); }
+  20% {
+    transform: translate(-27.5%, -12.5%) scale(0.12) rotate(360deg); }
+  40% {
+    transform: translate(5%, -60%) scale(0.12) rotate(720deg); }
+  100% {
+    transform: translate(5%, -60%) scale(0.12) rotate(720deg); } }
+/* Mind the Gap */
+.mind-the-gap-icon .map-pointer-1 {
+  animation: animatePointer1 3s linear infinite;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%; }
+.mind-the-gap-icon .map-pointer-2 {
+  animation: animatePointer2 3s linear infinite;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%; }
+.mind-the-gap-icon .map-pointer-3 {
+  animation: animatePointer3 3s linear infinite;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%; }
+
+@keyframes animatePointer1 {
+  0% {
+    transform: translate(-26%, calc(-83% - 40%)) scale(0.15); }
+  10% {
+    transform: translate(-26%, -83%) scale(0.15); }
+  12.5% {
+    transform: translate(-26%, -83%) scaleY(0.1) scaleX(0.2); }
+  15% {
+    transform: translate(-26%, -83%) scaleY(0.17) scaleX(0.13); }
+  17.5% {
+    transform: translate(-26%, -83%) scale(0.15); }
+  100% {
+    transform: translate(-26%, -83%) scale(0.15); } }
+@keyframes animatePointer2 {
+  0% {
+    transform: translate(35%, calc(-86.5% - 40%)) scale(0.15); }
+  5% {
+    transform: translate(35%, calc(-86.5% - 40%)) scale(0.15); }
+  15% {
+    transform: translate(35%, -86.5%) scale(0.15); }
+  17.5% {
+    transform: translate(35%, -86.5%) scaleY(0.1) scaleX(0.2); }
+  20% {
+    transform: translate(35%, -86.5%) scaleY(0.17) scaleX(0.13); }
+  22.5% {
+    transform: translate(35%, -86.5%) scale(0.15); }
+  100% {
+    transform: translate(35%, -86.5%) scale(0.15); } }
+@keyframes animatePointer3 {
+  0% {
+    transform: translate(11%, calc(-69.5% - 40%)) scale(0.15); }
+  8% {
+    transform: translate(11%, calc(-69.5% - 40%)) scale(0.15); }
+  18.5% {
+    transform: translate(11%, -69.5%) scale(0.15); }
+  21% {
+    transform: translate(11%, -69.5%) scaleY(0.1) scaleX(0.2); }
+  23.5% {
+    transform: translate(11%, -69.5%) scaleY(0.17) scaleX(0.13); }
+  26% {
+    transform: translate(11%, -69.5%) scale(0.15); }
+  100% {
+    transform: translate(11%, -69.5%) scale(0.15); } }
+/* InsightUBC */
+.insight-ubc-icon .insight-load-1 {
+  animation: animateLoad1 3s linear infinite;
+  transform: translate(-10%, 0%) scale(0.03); }
+.insight-ubc-icon .insight-load-2 {
+  animation: animateLoad2 3s linear infinite;
+  transform: translate(0%, 0%) scale(0.03); }
+.insight-ubc-icon .insight-load-3 {
+  animation: animateLoad3 3s linear infinite;
+  transform: translate(10%, 0%) scale(0.03); }
+
+@keyframes animateLoad1 {
+  10% {
+    transform: translate(-10%, 0%) scale(0.03); }
+  15% {
+    transform: translate(-10%, 0%) scale(0.06); }
+  20% {
+    transform: translate(-10%, 0%) scale(0.03); } }
+@keyframes animateLoad2 {
+  12.5% {
+    transform: translate(0%, 0%) scale(0.03); }
+  17.5% {
+    transform: translate(0%, 0%) scale(0.06); }
+  22.5% {
+    transform: translate(0%, 0%) scale(0.03); } }
+@keyframes animateLoad3 {
+  15% {
+    transform: translate(10%, 0%) scale(0.03); }
+  20% {
+    transform: translate(10%, 0%) scale(0.06); }
+  25% {
+    transform: translate(10%, 0%) scale(0.03); } }
+/* GSMS */
+.grocery-management-icon .gsms-database {
+  transform: translate(0%, -31%) scale(0.2); }
+.grocery-management-icon .gsms-glow {
+  transform: translate(0%, 15%) scale(0.2);
+  animation: animateGlow 4s linear infinite; }
+
+@keyframes animateGlow {
+  0% {
+    transform: translate(0%, 13%) scale(0.2); }
+  40% {
+    transform: translate(0%, 72%) scale(0.2); }
+  50% {
+    transform: translate(0%, 72%) scale(0.2); }
+  90% {
+    transform: translate(0%, 13%) scale(0.2); }
+  100% {
+    transform: translate(0%, 13%) scale(0.2); } }
+/* Contact ************************************************************************************************************/
+#contact {
+  align-items: center;
+  background: #232323;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 2em;
+  min-height: 15vh;
+  justify-content: center;
+  margin: auto; }
+  #contact .contact-title {
+    margin: 1em 0 1em 0; }
+    #contact .contact-title .highlight {
+      color: #e65a5a; }
+  #contact .contact-item {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 40%;
+    justify-content: center;
+    margin: auto;
+    width: 100%; }
+    #contact .contact-item a {
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      align-items: center;
+      border: 0.1em solid transparent;
+      cursor: pointer;
+      display: flex;
+      height: 1.5em;
+      justify-content: center;
+      text-decoration: none;
+      margin: 0 0.5em; }
+      #contact .contact-item a:before {
+        align-items: center;
+        color: rgba(255, 255, 255, 0);
+        display: flex;
+        font-family: Helvetica, sans-serif;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        transition: all 0.2s linear 0s;
+        width: 100%; }
+    #contact .contact-item #github {
+      color: #6e5494;
+      transition: all 0.2s linear 0s;
+      position: relative;
+      overflow: hidden; }
+      #contact .contact-item #github:before {
+        content: "github.com/ibemitchy"; }
+      #contact .contact-item #github:hover {
+        color: rgba(110, 84, 148, 0);
+        width: 10em; }
+        #contact .contact-item #github:hover:before {
+          color: #6e5494; }
+    #contact .contact-item #email {
+      color: #ff7800;
+      transition: all 0.2s linear 0s;
+      position: relative;
+      overflow: hidden; }
+      #contact .contact-item #email:before {
+        content: "mitchellma0427@hotmail.com"; }
+      #contact .contact-item #email:hover {
+        color: rgba(255, 120, 0, 0);
+        width: 14em; }
+        #contact .contact-item #email:hover:before {
+          color: #ff7800; }
+  #contact .footer {
+    font-size: 0.5em;
+    margin: 2em 0 1em 0; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */

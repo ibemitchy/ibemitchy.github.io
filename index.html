@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mitchell Ma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+<!-- Navigation ------------------------------------------------------------------------------------------------------->
+<nav id="navbar" class="big-nav">
+    <a href="#home">
+        <span class="nav-icon fa fa-home" aria-hidden="true"></span>
+        <span class="nav-label">Home</span>
+    </a>
+    <a href="#about">
+        <span class="nav-icon fa fa-user" aria-hidden="true"></span>
+        <span class="nav-label">About</span>
+    </a>
+    <a href="#experience">
+        <span class="nav-icon fa fa-bar-chart" aria-hidden="true"></span>
+        <span class="nav-label">Experience</span>
+    </a>
+    <a href="#projects">
+        <span class="nav-icon fa fa-code" aria-hidden="true"></span>
+        <span class="nav-label">Projects</span>
+    </a>
+    <a href="#contact">
+        <span class="nav-icon fa fa-inbox" aria-hidden="true"></span>
+        <span class="nav-label">Contact</span>
+    </a>
+</nav>
+
+<!-- Home ------------------------------------------------------------------------------------------------------------->
+<section id="home">
+    <div class="place-holder"></div>
+    <object>
+        <embed src="./images/hello-world.svg" width="100%">
+    </object>
+</section>
+
+<!-- About ------------------------------------------------------------------------------------------------------------>
+<section id="about">
+    <div class="section-content">
+        <h3 id="about-intro">My name is</h3>
+        <div id="about-name">
+            <span id="about-first-name">Mitchell</span><span id="about-last-name">Ma</span>
+        </div>
+        <img src="./images/personal-pic.png"/>
+        <p id="about-description">
+            an undergraduate student studying mathematics and computer science at the University of British Columbia in Vancouver, Canada.
+        </p>
+    </div>
+</section>
+
+<!-- Experience ------------------------------------------------------------------------------------------------------->
+<section id="experience">
+    <div class="section-content">
+        <h1 class="section-title">
+            Experience
+        </h1>
+        <p>
+            Here are my nonsensical stats if I were an RPG character
+        </p>
+        <div id="experience-chart-container">
+            <canvas id="skill-chart"></canvas>
+        </div>
+        <div id="experience-resume">
+            <button id="resume-button">
+                Check out my résumé!
+            </button>
+            <a id="view-resume" href="docs/resume.pdf" target="_blank" class="experience-button">
+                <span class="fa fa-eye" aria-hidden="true"></span>&ensp;View
+            </a>
+            <a id="download-resume" href="docs/resume.pdf" download class="experience-button">
+                <span class="fa fa-download" aria-hidden="true"></span>&ensp;Download
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Projects --------------------------------------------------------------------------------------------------------->
+<section id="projects">
+    <div class="section-content">
+        <h1 class="section-title">
+            Projects
+        </h1>
+        <p>
+            And here are some things I've worked on
+        </p>
+        <ul class="projs">
+            <li id="project-1" class="project">
+                <div class="preview-container">
+                    <div class="preview-content">
+                        <div class="webpage-icon icon">
+                            <img src="./images/icon-webpage.svg" alt="webpage icon" class="webpage-webpage">
+                            <img src="./images/icon-cursor.svg" alt="webpage cursor" class="webpage-cursor">
+                        </div>
+                        <div class="preview-overlay">
+                            <h1 class="preview-title">Personal Website</h1>
+                            <p class="preview-description">My very own webpage</p>
+                            <ul class="preview-tags">
+                                <li class="preview-tag">HTML</li>
+                                <li class="preview-tag">SCSS</li>
+                                <li class="preview-tag">TypeScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container">
+                    <div class="modal-content">
+                        <h1 class="modal-title">
+                            Personal Website
+                        </h1>
+                        <div class="modal-icon-container">
+                            <div class="webpage-icon icon">
+                                <img src="./images/icon-webpage.svg" alt="webpage icon" class="webpage-webpage">
+                                <img src="./images/icon-cursor.svg" alt="webpage cursor" class="webpage-cursor">
+                            </div>
+                        </div>
+                        <p class="modal-subtitle">
+                            My very own webpage
+                        </p>
+                        <p class="modal-description">
+                            In preparation for one of my courses at UBC, I picked up Jon Duckett's <a href="http://www.htmlandcssbook.com/">HTML and CSS: Design and Build Websites</a> book from the nearest Amazon and created this page as a means to experiment with the front-end environment. As I got further into the book, I started forgetting what I had previously read in the book. So, I decided to transform the experimental webpage into my very own online profile page as a way to solidify what I have learned. What was originally supposed to be a throwaway page turned into this mini project!
+                        </p>
+                        <p class="modal-subtitle">
+                            The Process
+                        </p>
+                        <p class="modal-description">
+                            I had quite the rough start. At the time, I've only ever coded in Java and C++, so HTML and CSS seemed extremely foreign to me. While I quickly familiarzed myself with HTML, CSS was an absolute pain. My lack of artistic sense coupled with my OCD did not help much, either. I still remember being extremely frustrated because I could not vertically center an element inside a div box even after hours of research on the internet. As I discovered more tools such as Flex Box and picked up JavaScript, I began recoding certain parts of the site and even went as far as to starting the page from scratch. My confidence in my front-end skills solidified further with every piece of code I rewrite. I'm still constantly making changes and am excited to try out some of the newer features provided by HTML6 and CSS4.
+                        </p>
+                        <p class="modal-subtitle">
+                            What I learned
+                        </p>
+                        <p class="modal-description">
+                            It was an amazing experience. I picked up on a ton of things throughout this entire thing. I learned the basics of creating a responsive and interactive site. I learned about colour theory so that I won't dress like a Christmas tree in the future. I learned how to add interactivity using JavaScript/TypeScript. I relearned how to use Illustrator and Photoshop to create some SVG animations. Most importantly, I learned how to vertically center an element in a div box!
+                        </p>
+                        <p class="modal-subtitle">
+                            Tools
+                        </p>
+                        <p class="modal-description">
+                            HTML, SCSS, TypeScript, Adobe Illustrator, Coffee
+                        </p>
+                        <div class="modal-buttons">
+                            <a href="https://github.com/ibemitchy/ibemitchy.github.io" target="_blank" class="modal-button">
+                                <span class="modal-github">GitHub</span>
+                            </a>
+                            <button class="modal-button">
+                                <span class="modal-return">Return</span>
+                            </button>
+                            <span class="fa fa-times modal-close" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="project-2" class="project">
+                <div class="preview-container">
+                    <div class="preview-content">
+                        <div class="game-icon icon">
+                            <img src="./images/icon-game-background.svg" alt="space background" class="game-background">
+                            <img src="./images/icon-game-invader-A.svg" alt="space invader" class="game-invader-A">
+                            <img src="./images/icon-game-invader-B.svg" alt="space invader" class="game-invader-B">
+                            <img src="./images/icon-game-paddle.svg" alt="brick breaker paddle" class="game-paddle">
+                            <img src="./images/icon-game-ball.svg" alt="brick breaker ball" class="game-ball">
+                        </div>
+                        <div class="preview-overlay">
+                            <h1 class="preview-title">Space Invaders and Brick Breaker</h1>
+                            <p class="preview-description">An introduction to programming</p>
+                            <ul class="preview-tags">
+                                <li class="preview-tag">Java</li>
+                                <li class="preview-tag">Visual Basic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container">
+                    <div class="modal-content">
+                        <h1 class="modal-title">
+                            Space Invaders and Brick Breaker
+                        </h1>
+                        <div class="modal-icon-container">
+                            <div class="game-icon icon">
+                                <img src="./images/icon-game-background.svg" alt="space background" class="game-background">
+                                <img src="./images/icon-game-invader-A.svg" alt="space invader" class="game-invader-A">
+                                <img src="./images/icon-game-invader-B.svg" alt="space invader" class="game-invader-B">
+                                <img src="./images/icon-game-paddle.svg" alt="brick breaker paddle" class="game-paddle">
+                                <img src="./images/icon-game-ball.svg" alt="brick breaker ball" class="game-ball">
+                            </div>
+                        </div>
+                        <p class="modal-subtitle">
+                            An introduction to programming
+                        </p>
+                        <p class="modal-description">
+                            My first exposure to programming was back in 2012 when I was still in grade 10. My first assignment was to make a rectangle oscillate left and right using simple if statements. At the time, I was completely blown away because it completely changed my understanding of how programs and applications worked.
+                        </p>
+                        <p class="modal-subtitle">
+                            Brick Breaker
+                        </p>
+                        <p class="modal-description">
+                            Brick Breaker was the very first game I attempted to recreate. I coded the game up using Visual Basic. By coding, I meant dragging and dropping a lot of shapes onto a form. I also had no idea what loops were at the time, so I had to copy and paste a lot of brick code while manually changing the (x,y) coordinates. I was so into programming my game that I pulled a few all-nighters implementing various features such as power-ups and difficulty level. In retrospect, the code was definitely littered with redundancy and other unappealing characteristics. However, I thought that the game turned out pretty good for a novice.
+                        </p>
+                        <p class="modal-subtitle">
+                            Space Invaders
+                        </p>
+                        <p class="modal-description">
+                            My second attempt at recreating a game went much more smoothly. This time, I was tasked to code Space Invaders using Java. Graphics was much more challenging this time as I was no longer able to drag and drop shapes onto a form like I could with Visual Basic. However, the whole process was much quicker because I learned what nested loops were, so creating and updating the invaders was much easier. Unfortunately, I did not know about classes or anything related to object-oriented programming, so the game was still riddled with redundancy. I also never figured out a way to make my double buffer work, so the end product had a blinking grid of invaders. Regardless, the game was quite functional and playable.
+                        </p>
+                        <p class="modal-subtitle">
+                            What I learned
+                        </p>
+                        <p class="modal-description">
+                            On top of natural languages, I finally picked up two programming languages (I no longer remember Visual Basic, though). I felt as if I were an alchmist learning about chemistry since programming completely changed my view of how computer applications worked. Recreating the two games definitely taught me a lot about programming and gave me a great foundation as I continued studying computer science.
+                        </p>
+                        <p class="modal-subtitle">
+                            Tools
+                        </p>
+                        <p class="modal-description">
+                            Visual Basic, Java, Ctrl+C
+                        </p>
+                        <div class="modal-buttons">
+                            <button class="modal-button">
+                                <span class="modal-return">Return</span>
+                            </button>
+                            <span class="fa fa-times modal-close" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="project-3" class="project">
+                <div class="preview-container">
+                    <div class="preview-content">
+                        <div class="mind-the-gap-icon icon">
+                            <img src="./images/icon-mind-the-gap.svg" alt="map icon" class="map-map">
+                            <img src="./images/icon-map-pointer.svg" alt="map pointer one" class="map-pointer-1">
+                            <img src="./images/icon-map-pointer.svg" alt="map pointer two" class="map-pointer-2">
+                            <img src="./images/icon-map-pointer.svg" alt="map pointer three" class="map-pointer-3">
+                        </div>
+                        <div class="preview-overlay">
+                            <h1 class="preview-title">Mind the Gap</h1>
+                            <p class="preview-description">An Android application for London's transit system</p>
+                            <ul class="preview-tags">
+                                <li class="preview-tag">Java</li>
+                                <li class="preview-tag">Android</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container">
+                    <div class="modal-content">
+                        <h1 class="modal-title">
+                            Mind the Gap
+                        </h1>
+                        <div class="modal-icon-container">
+                            <div class="mind-the-gap-icon icon">
+                                <img src="./images/icon-mind-the-gap.svg" alt="map icon" class="map-map">
+                                <img src="./images/icon-map-pointer.svg" alt="map pointer one" class="map-pointer-1">
+                                <img src="./images/icon-map-pointer.svg" alt="map pointer two" class="map-pointer-2">
+                                <img src="./images/icon-map-pointer.svg" alt="map pointer three" class="map-pointer-3">
+                            </div>
+                        </div>
+                        <p class="modal-subtitle">
+                            An Android application for London's transit system
+                        </p>
+                        <p class="modal-description">
+                            Mind the Gap is an Android application that provides the user with London's transit schedules in real time by querying the London's RESTful TransportforLondon API.
+                        </p>
+                        <p class="modal-subtitle">
+                            Phase One
+                        </p>
+                        <p class="modal-description">
+                            The first part of the project was mainly to implement the JSON and XML parsers to transform the API responses into something useable. While the coding portion was simple, making sense of the raw API responses was quite the challenge. I was also introduced to JUnit and IntelliJ's powerful debugger, powerful tools to verify code behaviour and to pinpoint bugs.
+                        </p>
+                        <p class="modal-subtitle">
+                            Phase Two
+                        </p>
+                        <p class="modal-description">
+                            The second part of the project was to create the actual Android application. Using the parsed data from the API responses, the application marks out specific stations and tube lines through a geographic display. The user is further able to query the transit schedules at stations of their choice.
+                        </p>
+                        <p class="modal-subtitle">
+                            What I learned
+                        </p>
+                        <p class="modal-description">
+                            Having already programmed in Java back in high school, the coding aspect of the project was quite simple. However, I discovered an amazing set of tools that I have never used before such as JUnit and the debugger. I had never created a mobile application before, so seeing the application run natively on my Galaxy Note was definitely a cool experience.
+                        </p>
+                        <p class="modal-subtitle">
+                            Tools
+                        </p>
+                        <p class="modal-description">
+                            Java, Android, IntelliJ, JUnit
+                        </p>
+                        <div class="modal-buttons">
+                            <button class="modal-button">
+                                <span class="modal-return">Return</span>
+                            </button>
+                            <span class="fa fa-times modal-close" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="project-4" class="project">
+                <div class="preview-container">
+                    <div class="preview-content">
+                        <div class="insight-ubc-icon icon">
+                            <img src="./images/icon-insight-ubc.svg" alt="insight UBC webpage" class="insight-ubc">
+                            <img src="./images/icon-insight-load.svg" alt="insight UBC loading animation" class="insight-load-1">
+                            <img src="./images/icon-insight-load.svg" alt="insight UBC loading animation" class="insight-load-2">
+                            <img src="./images/icon-insight-load.svg" alt="insight UBC loading animation" class="insight-load-3">
+                        </div>
+                        <div class="preview-overlay">
+                            <h1 class="preview-title">InsightUBC</h1>
+                            <p class="preview-description">A UBC course and building explorer</p>
+                            <ul class="preview-tags">
+                                <li class="preview-tag">HTML</li>
+                                <li class="preview-tag">SCSS</li>
+                                <li class="preview-tag">TypeScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container">
+                    <div class="modal-content">
+                        <span class="modal-title">
+                            InsightUBC
+                        </span>
+                        <div class="modal-icon-container">
+                            <div class="insight-ubc-icon icon">
+                                <img src="./images/icon-insight-ubc.svg" alt="insight UBC webpage" class="insight-ubc">
+                                <img src="./images/icon-insight-load.svg" alt="insight UBC loading animation" class="insight-load-1">
+                                <img src="./images/icon-insight-load.svg" alt="insight UBC loading animation" class="insight-load-2">
+                                <img src="./images/icon-insight-load.svg" alt="insight UBC loading animation" class="insight-load-3">
+                            </div>
+                        </div>
+                        <p class="modal-subtitle">
+                            A UBC course and building explorer
+                        </p>
+                        <p class="modal-description">
+                            InsightUBC provides a way to effectively query the metadata of various courses and buildings at UBC. It is able to provide information such as course averages and room availability and is also able to create timetables based on the user's input.
+                        </p>
+                        <p class="modal-subtitle">
+                            Backend Server
+                        </p>
+                        <p class="modal-description">
+                            The initial part of the project was to implement ways for the server to add, remove, and cache UBC metadata given valid zip files. The next part involved finding and transforming the locally cached data on the server based on specific queries provided by the user. For the last part, REST endpoints were created to finalize the API. All of the code were debugged using the Mocha test framework.
+                        </p>
+                        <p class="modal-subtitle">
+                            Frontend Webpage
+                        </p>
+                        <p class="modal-description">
+                            The server serves a static webpage on which the user is able to browse, search, and refine information regarding courses and buildings. The main goal of the webpage is to transform the user's inputs into valid queries suitable for the backend and to display the response returned by the server.
+                        </p>
+                        <p class="modal-subtitle">
+                            What I learned
+                        </p>
+                        <p class="modal-description">
+                            This was my first major exposure to asynchronous programming. While Promises and AJAX proved extremely confusing at first, I became extremely comfortable with the asynchronous side of Javascript by the end of the project. I was also able to experiment a bit with some frameworks such as Angular and React, though I settled for vanilla JavaScript and JQuery as the former was completely overkill for my needs.
+                        </p>
+                        <p class="modal-subtitle">
+                            Tools
+                        </p>
+                        <p class="modal-description">
+                            Typescript, HTML, SCSS, WebStorm, Mocha, Node, JQuery
+                        </p>
+                        <div class="modal-buttons">
+                            <button class="modal-button">
+                                <span class="modal-return">Return</span>
+                            </button>
+                            <span class="fa fa-times modal-close" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="project-5" class="project">
+                <div class="preview-container">
+                    <div class="preview-content">
+                        <div class="grocery-management-icon icon">
+                            <img src="./images/icon-gsms.svg" alt="grocery management icon" class="gsms-background">
+                            <img src="./images/icon-database-glow.svg" alt="database glowing icon" class="gsms-glow">
+                            <img src="./images/icon-database.svg" alt="database icon" class="gsms-database">
+                        </div>
+                        <div class="preview-overlay">
+                            <h1 class="preview-title">GSMS</h1>
+                            <p class="preview-description">A grocery management system</p>
+                            <ul class="preview-tags">
+                                <li class="preview-tag">HTML</li>
+                                <li class="preview-tag">SCSS</li>
+                                <li class="preview-tag">TypeScript</li>
+                                <li class="preview-tag">Oracle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container">
+                    <div class="modal-content">
+                        <h1 class="modal-title">
+                            GSMS
+                        </h1>
+                        <div class="modal-icon-container">
+                            <div class="grocery-management-icon icon">
+                                <img src="./images/icon-gsms.svg" alt="grocery management icon" class="gsms-background">
+                                <img src="./images/icon-database-glow.svg" alt="database glowing icon" class="gsms-glow">
+                                <img src="./images/icon-database.svg" alt="database icon" class="gsms-database">
+                            </div>
+                        </div>
+                        <p class="modal-subtitle">
+                            A grocery management system
+                        </p>
+                        <p class="modal-description">
+                            GSMS is a management system that, among many other things, helps store managers monitor transactions and allows customers to query for various items available at the store. It was a group project between my friends Jonathan, Dalvir, Sonny, and myself.
+                        </p>
+                        <p class="modal-subtitle">
+                            Backend Server
+                        </p>
+                        <p class="modal-description">
+                            With the growing popularity of Node, it was our primary candidate for the server. We chose Oracle as our database due to the massive support and resources available. The primary role of the server is to transform user data into SQL or PL/SQL statements that are then executed on Oracle.
+                        </p>
+                        <p class="modal-subtitle">
+                            Frontend Webpage
+                        </p>
+                        <p class="modal-description">
+                            The webpage serves as the control panel that is mainly suitable for the manager. In essence, it serves as a GUI for a typical database, allowing the manager to add, delete, or alter data within the store system. The page can be easily changed to better serve customers by restricting interactions with only views and by limiting queries to only those that do not alter the database.
+                        </p>
+                        <p class="modal-subtitle">
+                            What I learned
+                        </p>
+                        <p class="modal-description">
+                            The main goal of project was to better familiarize ourselves with databases. We practiced writing and generating dynamic SQL statements that are suitable for Oracle but should be applicable to other database systems. We also experimented with the more powerful PL/SQL. Along the way, we also discovered many other interesting things, including data sanitization to prevent SQL injections.
+                        </p>
+                        <p class="modal-subtitle">
+                            Tools
+                        </p>
+                        <p class="modal-description">
+                            Typescript, HTML, SCSS, WebStorm, Node, JQuery, Oracle, OracleDB
+                        </p>
+                        <div class="modal-buttons">
+                            <button class="modal-button">
+                                <span class="modal-return">Return</span>
+                            </button>
+                            <span class="fa fa-times modal-close" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Contact ---------------------------------------------------------------------------------------------------------->
+<section id="contact">
+    <h4 class="contact-title">
+        Let's&nbsp;<span class="highlight">connect</span>
+    </h4>
+    <div class="contact-item">
+        <a id="github" href="https://github.com/ibemitchy" target="_blank">
+            <span class="fa fa-github" aria-hidden="true"></span>
+        </a>
+        <a id="email" href="mailto:mitchellma0427@hotmail.com">
+            <span class="fa fa-envelope" aria-hidden="true"></span>
+        </a>
+    </div>
+    <p class="footer">
+        <span>Made with lots of <i class="fa fa-coffee" aria-hidden="true"> in 2017</i>.</span>
+    </p>
+</section>
+
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
