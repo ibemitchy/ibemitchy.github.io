@@ -453,7 +453,7 @@ a {
     overflow: hidden;
 }
 
-@media (min-width: 35em) {
+@media (min-width: 35em) AND (max-resolution: 192dpi) {
     #projects > .section-content > .projs > .project {
         .preview-container {
             border: $p1c2 solid $preview-container-border;
@@ -636,7 +636,8 @@ a {
     }
 }
 
-@media (max-width: 35em), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//(-webkit-min-device-pixel-ratio: 2)
+@media (max-width: 35em), (min-resolution: 192dpi) {
     #projects > .section-content > .projs > .project {
         .preview-container {
             border: solid 0.1em $white;

@@ -680,7 +680,7 @@ a {
 .overflow-hidden {
   overflow: hidden; }
 
-@media (min-width: 35em) {
+@media (min-width: 35em) and (max-resolution: 192dpi) {
   #projects > .section-content > .projs > .project .preview-container {
     border: #c25ae1 solid 0.5em;
     flex-flow: column nowrap;
@@ -836,7 +836,7 @@ a {
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
         opacity: 1; } }
-@media (max-width: 35em), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (max-width: 35em), (min-resolution: 192dpi) {
   #projects > .section-content > .projs > .project .preview-container {
     border: solid 0.1em white;
     flex-flow: column nowrap;
