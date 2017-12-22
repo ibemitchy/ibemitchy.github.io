@@ -839,6 +839,26 @@ a {
         transition: all 0.3s;
         opacity: 1; } }
 @media (max-width: 35em), (min-resolution: 192dpi) {
+  .big-nav {
+    background: rgba(0, 0, 0, 0.25);
+    height: 4rem; }
+    .big-nav a .nav-label {
+      display: none; }
+    .big-nav a .nav-icon {
+      color: white;
+      display: flex; }
+
+  .mini-nav {
+    height: 2.4rem; }
+    .mini-nav a .nav-label {
+      display: none; }
+    .mini-nav a .nav-icon {
+      color: white;
+      display: flex; }
+
+  section > .section-content {
+    padding-top: 2em; }
+
   #projects > .section-content > .projs > .project .preview-container {
     border: solid 0.1em white;
     flex-flow: column nowrap;
@@ -881,26 +901,6 @@ a {
       width: 100%; }
       #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-close .modal-close-icon {
         color: white; }
-
-  .big-nav {
-    background: rgba(0, 0, 0, 0.25);
-    height: 6rem; }
-    .big-nav a .nav-label {
-      display: none; }
-    .big-nav a .nav-icon {
-      color: white;
-      display: flex; }
-
-  .mini-nav {
-    height: 2em; }
-    .mini-nav a .nav-label {
-      display: none; }
-    .mini-nav a .nav-icon {
-      color: white;
-      display: flex; }
-
-  section > .section-content {
-    padding-top: 2em; }
 
   #contact > .contact-item > a {
     font-size: 5vw; }
