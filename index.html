@@ -14,23 +14,23 @@
 <!-- Navigation ------------------------------------------------------------------------------------------------------->
 <nav id="navbar" class="big-nav">
     <a href="#home">
-        <span class="nav-icon fa fa-home" aria-hidden="true"></span>
+        <span class="nav-icon fas fa-home" aria-hidden="true"></span>
         <span class="nav-label">Home</span>
     </a>
     <a href="#about">
-        <span class="nav-icon fa fa-user" aria-hidden="true"></span>
+        <span class="nav-icon fas fa-user" aria-hidden="true"></span>
         <span class="nav-label">About</span>
     </a>
     <a href="#experience">
-        <span class="nav-icon fa fa-bar-chart" aria-hidden="true"></span>
+        <span class="nav-icon fas fa-chart-bar" aria-hidden="true"></span>
         <span class="nav-label">Experience</span>
     </a>
     <a href="#projects">
-        <span class="nav-icon fa fa-code" aria-hidden="true"></span>
+        <span class="nav-icon fas fa-code" aria-hidden="true"></span>
         <span class="nav-label">Projects</span>
     </a>
     <a href="#contact">
-        <span class="nav-icon fa fa-inbox" aria-hidden="true"></span>
+        <span class="nav-icon fas fa-inbox" aria-hidden="true"></span>
         <span class="nav-label">Contact</span>
     </a>
 </nav>
@@ -51,7 +51,7 @@
             <span id="about-first-name">Mitchell</span><span id="about-last-name">Ma</span>
         </div>
         <img src="./images/personal-pic.png"/>
-        <p id="about-description">
+        <p class="section-description">
             an undergraduate student studying mathematics and computer science at the University of British Columbia in Vancouver, Canada.
         </p>
     </div>
@@ -63,7 +63,7 @@
         <h1 class="section-title">
             Experience
         </h1>
-        <p>
+        <p class="section-description">
             Here are my nonsensical stats if I were an RPG character
         </p>
         <div id="experience-chart-container">
@@ -74,10 +74,12 @@
                 Check out my résumé!
             </button>
             <a id="view-resume" href="docs/resume.pdf" target="_blank" class="experience-button">
-                <span class="fas fa-eye" aria-hidden="true"></span>&ensp;View
+                <span class="fas fa-eye" aria-hidden="true"></span>
+                <span class="resume-string">View</span>
             </a>
             <a id="download-resume" href="docs/resume.pdf" download class="experience-button">
-                <span class="fas fa-download" aria-hidden="true"></span>&ensp;Download
+                <span class="fas fa-download" aria-hidden="true"></span>
+                <span class="resume-string">Download</span>
             </a>
         </div>
     </div>
@@ -89,7 +91,7 @@
         <h1 class="section-title">
             Projects
         </h1>
-        <p>
+        <p class="section-description">
             And here are some things I've worked on
         </p>
         <ul class="projs">
@@ -148,12 +150,20 @@
                         </p>
                         <div class="modal-buttons">
                             <a href="https://bitbucket.org/mitchma/mitchma.bitbucket.io" target="_blank" class="modal-button">
-                                <span class="modal-bitbucket">Bitbucket</span>
+                                <div class="modal-button-icon-container">
+                                    <span class="fab fa-bitbucket modal-button-icon" aria-hidden="true"></span>
+                                </div>
+                                <span class="modal-bitbucket modal-button-description">Bitbucket</span>
                             </a>
-                            <button class="modal-button">
-                                <span class="modal-return">Return</span>
+                            <button class="modal-button modal-button-close">
+                                <div class="modal-button-icon-container">
+                                    <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
+                                </div>
+                                <span class="modal-return modal-button-description">Return</span>
                             </button>
-                            <span class="fas fa-times modal-close" aria-hidden="true"></span>
+                            <button class="modal-close">
+                                <span class="fas fa-times modal-close-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -223,10 +233,15 @@
                             Visual Basic, Java, Ctrl+C
                         </p>
                         <div class="modal-buttons">
-                            <button class="modal-button">
-                                <span class="modal-return">Return</span>
+                            <button class="modal-button modal-button-close">
+                                <div class="modal-button-icon-container">
+                                    <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
+                                </div>
+                                <span class="modal-return modal-button-description">Return</span>
                             </button>
-                            <span class="fas fa-times modal-close" aria-hidden="true"></span>
+                            <button class="modal-close">
+                                <span class="fas fa-times modal-close-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -294,10 +309,15 @@
                             Java, Android, IntelliJ, JUnit
                         </p>
                         <div class="modal-buttons">
-                            <button class="modal-button">
-                                <span class="modal-return">Return</span>
+                            <button class="modal-button modal-button-close">
+                                <div class="modal-button-icon-container">
+                                    <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
+                                </div>
+                                <span class="modal-return modal-button-description">Return</span>
                             </button>
-                            <span class="fas fa-times modal-close" aria-hidden="true"></span>
+                            <button class="modal-close">
+                                <span class="fas fa-times modal-close-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -366,10 +386,15 @@
                             Typescript, HTML, SCSS, WebStorm, Mocha, Node, JQuery
                         </p>
                         <div class="modal-buttons">
-                            <button class="modal-button">
-                                <span class="modal-return">Return</span>
+                            <button class="modal-button modal-button-close">
+                                <div class="modal-button-icon-container">
+                                    <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
+                                </div>
+                                <span class="modal-return modal-button-description">Return</span>
                             </button>
-                            <span class="fas fa-times modal-close" aria-hidden="true"></span>
+                            <button class="modal-close">
+                                <span class="fas fa-times modal-close-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -437,10 +462,15 @@
                             Typescript, HTML, SCSS, WebStorm, Node, JQuery, Oracle, OracleDB
                         </p>
                         <div class="modal-buttons">
-                            <button class="modal-button">
-                                <span class="modal-return">Return</span>
+                            <button class="modal-button modal-button-close">
+                                <div class="modal-button-icon-container">
+                                    <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
+                                </div>
+                                <span class="modal-return modal-button-description">Return</span>
                             </button>
-                            <span class="fas fa-times modal-close" aria-hidden="true"></span>
+                            <button class="modal-close">
+                                <span class="fas fa-times modal-close-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -457,9 +487,11 @@
     <div class="contact-item">
         <a id="bitbucket" href="https://bitbucket.org/mitchma" target="_blank">
             <span class="fab fa-bitbucket" aria-hidden="true"></span>
+            <span class="contact-string">bitbucket.org/mitchma</span>
         </a>
         <a id="email" href="mailto:mitchellma0427@hotmail.com">
             <span class="far fa-envelope" aria-hidden="true"></span>
+            <span class="contact-string">mitchellma0427@hotmail.com</span>
         </a>
     </div>
     <p class="footer">

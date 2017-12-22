@@ -1,0 +1,304 @@
+/* Experience *********************************************************************************************************/
+@keyframes animateShake {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(0%, 25%);
+    }
+    75% {
+        transform: translate(0%, -25%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+/* Projects ***********************************************************************************************************/
+
+/* Website */
+.webpage-cursor {
+    transform: translate(-15%, -45%) rotate(-45deg) scale(0.1);
+    animation: animateCursor 5s linear infinite;
+}
+
+@keyframes animateCursor {
+    0% {
+        transform: translate($init-cursor-x, $init-cursor-y) rotate(-45deg) scale(0.1);
+    }
+    10% {
+        transform: translate($mid-cursor-x, $mid-cursor-y) rotate(-45deg) scale(0.1);
+    }
+    24% {
+        transform: translate($mid-cursor-x, $mid-cursor-y) rotate(-45deg) scale(0.1);
+    }
+    27% {
+        transform: translate($mid-cursor-x, $mid-cursor-y) rotate(-45deg) scale(0.075);
+    }
+    30% {
+        transform: translate($mid-cursor-x, $mid-cursor-y) rotate(-45deg) scale(0.1);
+    }
+    40% {
+        transform: translate($mid-cursor-x, $mid-cursor-y) rotate(-45deg) scale(0.1);
+    }
+    52.5% {
+        transform: translate($end-cursor-x, $end-cursor-y) rotate(-45deg) scale(0.1);
+    }
+    100% {
+        transform: translate($end-cursor-x, $end-cursor-y) rotate(-45deg) scale(0.1);
+    }
+}
+
+/* Games */
+.game-icon {
+    .game-invader-A {
+        animation: animateInvaderA 4s linear infinite;
+        transform: scale(0.5) translate($alien-pos-x, $alien-pos-y);
+        opacity: 1;
+    }
+
+    .game-invader-B {
+        animation: animateInvaderB 4s linear infinite;
+        transform: scale(0.5) translate($alien-pos-x, $alien-pos-y);
+        opacity: 0;
+    }
+
+    .game-paddle {
+        transform: scale(0.3) translate(-90%, 600%);
+    }
+
+    .game-ball {
+        animation: animateBall 7s linear infinite;
+        transform: scale(0.12) translate(-1500%, -600%);
+    }
+}
+
+@keyframes animateInvaderA {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    25.1% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    50.1% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    75.1% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animateInvaderB {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    25.1% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    50.1% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    75.1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animateBall {
+    0% {
+        transform: translate(-60%, -60%) scale(0.12) rotate(0deg);
+    }
+    20% {
+        transform: translate(-27.5%, -12.5%) scale(0.12) rotate(360deg);
+    }
+    40% {
+        transform: translate(5%, -60%) scale(0.12) rotate(720deg);
+    }
+    100% {
+        transform: translate(5%, -60%) scale(0.12) rotate(720deg);
+    }
+}
+
+/* Mind the Gap */
+.mind-the-gap-icon {
+    @include animate-pointer(map-pointer-1, animatePointer1);
+    @include animate-pointer(map-pointer-2, animatePointer2);
+    @include animate-pointer(map-pointer-3, animatePointer3);
+}
+
+@keyframes animatePointer1 {
+    0% {
+        transform: translate($p1-x, calc(#{$p1-y} - 40%)) scale(0.15);
+    }
+    10% {
+        transform: translate($p1-x, $p1-y) scale(0.15);
+    }
+    12.5% {
+        transform: translate($p1-x, $p1-y) scaleY(0.10) scaleX(0.20);
+    }
+    15% {
+        transform: translate($p1-x, $p1-y) scaleY(0.17) scaleX(0.13);
+    }
+    17.5% {
+        transform: translate($p1-x, $p1-y) scale(0.15);
+    }
+    100% {
+        transform: translate($p1-x, $p1-y) scale(0.15);
+    }
+}
+
+@keyframes animatePointer2 {
+    0% {
+        transform: translate($p2-x, calc(#{$p2-y} - 40%)) scale(0.15);
+    }
+    5% {
+        transform: translate($p2-x, calc(#{$p2-y} - 40%)) scale(0.15);
+    }
+    15% {
+        transform: translate($p2-x, $p2-y) scale(0.15);
+    }
+    17.5% {
+        transform: translate($p2-x, $p2-y) scaleY(0.10) scaleX(0.20);
+    }
+    20% {
+        transform: translate($p2-x, $p2-y) scaleY(0.17) scaleX(0.13);
+    }
+    22.5% {
+        transform: translate($p2-x, $p2-y) scale(0.15);
+    }
+    100% {
+        transform: translate($p2-x, $p2-y) scale(0.15);
+    }
+}
+
+@keyframes animatePointer3 {
+    0% {
+        transform: translate($p3-x, calc(#{$p3-y} - 40%)) scale(0.15);
+    }
+    8% {
+        transform: translate($p3-x, calc(#{$p3-y} - 40%)) scale(0.15);
+    }
+    18.5% {
+        transform: translate($p3-x, $p3-y) scale(0.15);
+    }
+    21% {
+        transform: translate($p3-x, $p3-y) scaleY(0.10) scaleX(0.20);
+    }
+    23.5% {
+        transform: translate($p3-x, $p3-y) scaleY(0.17) scaleX(0.13);
+    }
+    26% {
+        transform: translate($p3-x, $p3-y) scale(0.15);
+    }
+    100% {
+        transform: translate($p3-x, $p3-y) scale(0.15);
+    }
+}
+
+/* InsightUBC */
+.insight-ubc-icon {
+    @include animate-load(insight-load-1, animateLoad1, $load-1-x, $load-y, 0.03);
+    @include animate-load(insight-load-2, animateLoad2, $load-2-x, $load-y, 0.03);
+    @include animate-load(insight-load-3, animateLoad3, $load-3-x, $load-y, 0.03);
+}
+
+@keyframes animateLoad1 {
+    0% {
+    }
+    10% {
+        transform: translate($load-1-x, $load-y) scale(0.03);
+    }
+    15% {
+        transform: translate($load-1-x, $load-y) scale(0.06);
+    }
+    20% {
+        transform: translate($load-1-x, $load-y) scale(0.03);
+    }
+    100% {
+    }
+}
+
+@keyframes animateLoad2 {
+    0% {
+    }
+    12.5% {
+        transform: translate($load-2-x, $load-y) scale(0.03);
+    }
+    17.5% {
+        transform: translate($load-2-x, $load-y) scale(0.06);
+    }
+    22.5% {
+        transform: translate($load-2-x, $load-y) scale(0.03);
+    }
+    100% {
+    }
+}
+
+@keyframes animateLoad3 {
+    0% {
+    }
+    15% {
+        transform: translate($load-3-x, $load-y) scale(0.03);
+    }
+    20% {
+        transform: translate($load-3-x, $load-y) scale(0.06);
+    }
+    25% {
+        transform: translate($load-3-x, $load-y) scale(0.03);
+    }
+    100% {
+    }
+}
+
+/* GSMS */
+.grocery-management-icon {
+    .gsms-database {
+        transform: translate(0%, -31%) scale(0.2);
+    }
+
+    .gsms-glow {
+        transform: translate(0%, 15%) scale(0.2);
+        animation: animateGlow 4s linear infinite;
+    }
+}
+
+@keyframes animateGlow {
+    0% {
+        transform: translate(0%, 13%) scale(0.2);
+    }
+    40% {
+        transform: translate(0%, 72%) scale(0.2);
+    }
+    50% {
+        transform: translate(0%, 72%) scale(0.2);
+    }
+    90% {
+        transform: translate(0%, 13%) scale(0.2);
+    }
+    100% {
+        transform: translate(0%, 13%) scale(0.2);
+    }
+}

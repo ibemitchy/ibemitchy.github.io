@@ -2,6 +2,7 @@
 $animation-speed: 0.3s;
 $nav-bar-height: 6rem;
 $white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
 
 $home-color: rgba(252, 173, 38, 1);
 
@@ -32,8 +33,8 @@ $p1c3: rgba(255, 255, 255, 1);
 $contact-color: rgba(35, 35, 35, 1);
 $font-color: rgba(255, 255, 255, 1);
 $highlight-color: rgba(230, 90, 90, 1);
-$bitbucket-color: rgba(110, 84, 148, 1);
-$bitbucket-color-0: rgba(110, 84, 148, 0);
+$bitbucket-color: rgba(38, 132, 255, 1);
+$bitbucket-color-o: rgba(38, 132, 255, 0);
 $facebook-color: rgba(59, 89, 152, 1);
 $email-color: rgba(255, 120, 0, 1);
 $email-color-0: rgba(255, 120, 0, 0);
@@ -75,10 +76,6 @@ $email-color-0: rgba(255, 120, 0, 0);
 
 @mixin setProjEntry($proj, $c1, $c2, $c3, $cContainer) {
     #{$proj} {
-        .preview-container {
-            border: $c2 solid $cContainer;
-        }
-
         .modal-container {
             background: $c1;
 
@@ -129,6 +126,7 @@ $alien-pos-y: -30%;
     .#{$name} {
         animation: $fxn 3s linear infinite;
 
+        transform-origin: 50% 100%;
         -webkit-transform-origin : 50% 100%;
         -moz-transform-origin : 50% 100%;
         -o-transform-origin : 50% 100%;

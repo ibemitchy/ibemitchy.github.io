@@ -32,7 +32,7 @@ function expandProject(): void {
 }
 
 function collapseProject(): void {
-    $(".modal-return, .modal-close").on("click", function (): void {
+    $(".modal-return, .modal-button-close, .modal-button-icon-container, .modal-button-icon, .modal-close").on("click", function (): void {
         $(".modal-container").css("display", "none");
         $("body").removeClass("overflow-hidden");
     });

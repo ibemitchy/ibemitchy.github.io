@@ -26,7 +26,7 @@ function expandProject() {
     });
 }
 function collapseProject() {
-    $(".modal-return, .modal-close").on("click", function () {
+    $(".modal-return, .modal-button-close, .modal-button-icon-container, .modal-button-icon, .modal-close").on("click", function () {
         $(".modal-container").css("display", "none");
         $("body").removeClass("overflow-hidden");
     });
