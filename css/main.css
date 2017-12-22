@@ -845,7 +845,7 @@ a {
     width: 90vw; }
     #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay {
       background: black;
-      max-height: 2.5em;
+      height: 3em;
       opacity: 0.8; }
       #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-title {
         font-size: calc(5.36585vw + 1.95122px); }
