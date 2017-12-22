@@ -332,7 +332,9 @@ section {
     display: flex;
     flex: 1 1 0;
     justify-content: center;
-    text-decoration: none; }
+    max-width: 25em;
+    text-decoration: none;
+    width: 65vw; }
 
 /* About **************************************************************************************************************/
 #about {
@@ -840,17 +842,21 @@ a {
   #projects > .section-content > .projs > .project .preview-container {
     border: solid 0.1em white;
     flex-flow: column nowrap;
-    margin: 0.5em 0.25em;
+    margin: 0.5em 0.1em;
     position: relative;
     width: 90vw; }
-    #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay {
+    #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-title {
       background: black;
-      height: 3em;
-      opacity: 0.8; }
-      #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-title {
-        font-size: calc(5.36585vw + 1.95122px); }
-      #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-description, #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-tags {
-        display: none; }
+      bottom: 0;
+      font-size: calc(5.36585vw + 1.95122px);
+      margin: 0;
+      opacity: 0.85;
+      padding: 0.25em 0;
+      position: absolute;
+      width: 100%;
+      z-index: 1; }
+    #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-description, #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-tags {
+      display: none; }
   #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons {
     margin: 2em 0 5em 0; }
     #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button {

@@ -123,7 +123,9 @@ section {
         display: flex;
         flex: 1 1 0;
         justify-content: center;
+        max-width: 25em;
         text-decoration: none;
+        width: 65vw;
     }
 }
 
@@ -642,17 +644,21 @@ a {
         .preview-container {
             border: solid 0.1em $white;
             flex-flow: column nowrap;
-            margin: 0.5em 0.25em;
+            margin: 0.5em 0.1em;
             position: relative;
             width: 90vw;
 
             .preview-content > .preview-overlay {
-                background: $black;
-                height: 3em;
-                opacity: 0.8;
-
                 .preview-title {
+                    background: $black;
+                    bottom: 0;
                     font-size: leastSquaresFit((150: 10, 560: 32));
+                    margin: 0;
+                    opacity: 0.85;
+                    padding: 0.25em 0;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
                 }
 
                 .preview-description, .preview-tags {
