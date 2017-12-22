@@ -853,8 +853,7 @@ a {
       opacity: 0.85;
       padding: 0.25em 0;
       position: absolute;
-      width: 100%;
-      z-index: 1; }
+      width: 100%; }
     #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-description, #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay .preview-tags {
       display: none; }
   #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons {
