@@ -5,35 +5,48 @@ function init() {
         navBar();
         displayChart();
         smoothScroll();
-        expandProject();
         collapseProject();
         setAspectRatio();
         clickResume();
+        previewContainerClick();
+        previewContainerPress();
         $(window).resize(function () {
-            setAspectRatio();
-        });
-        $(window).on("click", function () {
             setAspectRatio();
         });
     });
 }
-function expandProject() {
-    $(".preview-container").on("click", function () {
-        var modalContainer = $(this).parent().find(".modal-container");
-        modalContainer.css("display", "flex");
-        currModal = modalContainer.find(".modal-icon-container");
-        $("body").addClass("overflow-hidden");
+function previewContainerClick() {
+    $(".preview-container").on("click", function (e) {
+        expandProject(e, $(this));
     });
+}
+function previewContainerPress() {
+    $(".preview-container").keydown(function (e) {
+        if (e.key === " " || e.key === "Enter") {
+            e.preventDefault();
+            expandProject(e, $(this));
+        }
+    });
+}
+function expandProject(e, that) {
+    var modalContainer = that.parent().find(".modal-container");
+    toggleButton(e.target);
+    modalContainer.css("display", "flex");
+    currModal = modalContainer.find(".modal-icon-container");
+    $("body").addClass("overflow-hidden");
+    setAspectRatio();
 }
 function collapseProject() {
     $(".modal-return, .modal-button-close, .modal-button-icon-container, .modal-button-icon, .modal-close").on("click", function () {
         $(".modal-container").css("display", "none");
         $("body").removeClass("overflow-hidden");
+        setAspectRatio();
     });
     $(document).keyup(function (e) {
         if (e.keyCode === 27) {
             $(".modal-container").css("display", "none");
             $("body").removeClass("overflow-hidden");
+            setAspectRatio();
         }
     });
 }
@@ -142,3 +155,7 @@ function clickResume() {
 window.onload = function () {
     init();
 };
+function toggleButton(element) {
+    var pressed = (element.getAttribute("aria-pressed") === "true");
+    element.setAttribute("aria-pressed", !pressed);
+}

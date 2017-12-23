@@ -38,8 +38,8 @@
 <!-- Home ------------------------------------------------------------------------------------------------------------->
 <section id="home">
     <div class="place-holder"></div>
-    <object>
-        <embed src="./images/hello-world.svg" width="100%">
+    <object data="./images/hello-world.svg">
+        <!--<embed src="./images/hello-world.svg">-->
     </object>
 </section>
 
@@ -50,7 +50,7 @@
         <div id="about-name">
             <span id="about-first-name">Mitchell</span><span id="about-last-name">Ma</span>
         </div>
-        <img src="./images/personal-pic.png"/>
+        <img src="./images/personal-pic.png" alt="personal picture"/>
         <p class="section-description">
             an undergraduate student studying mathematics and computer science at the University of British Columbia in Vancouver, Canada.
         </p>
@@ -96,7 +96,7 @@
         </p>
         <ul class="projs">
             <li id="project-1" class="project">
-                <div class="preview-container">
+                <div role="button" aria-pressed="false" tabindex="0" class="preview-container">
                     <div class="preview-content">
                         <div class="webpage-icon icon">
                             <img src="./images/icon-webpage.svg" alt="webpage icon" class="webpage-webpage">
@@ -156,9 +156,9 @@
                                 <span class="modal-bitbucket modal-button-description">Bitbucket</span>
                             </a>
                             <button class="modal-button modal-button-close">
-                                <div class="modal-button-icon-container">
+                                <span class="modal-button-icon-container">
                                     <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
-                                </div>
+                                </span>
                                 <span class="modal-return modal-button-description">Return</span>
                             </button>
                             <button class="modal-close">
@@ -169,7 +169,7 @@
                 </div>
             </li>
             <li id="project-2" class="project">
-                <div class="preview-container">
+                <div tabindex="0" class="preview-container">
                     <div class="preview-content">
                         <div class="game-icon icon">
                             <img src="./images/icon-game-background.svg" alt="space background" class="game-background">
@@ -234,9 +234,9 @@
                         </p>
                         <div class="modal-buttons">
                             <button class="modal-button modal-button-close">
-                                <div class="modal-button-icon-container">
+                                <span class="modal-button-icon-container">
                                     <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
-                                </div>
+                                </span>
                                 <span class="modal-return modal-button-description">Return</span>
                             </button>
                             <button class="modal-close">
@@ -247,7 +247,7 @@
                 </div>
             </li>
             <li id="project-3" class="project">
-                <div class="preview-container">
+                <div tabindex="0" class="preview-container">
                     <div class="preview-content">
                         <div class="mind-the-gap-icon icon">
                             <img src="./images/icon-mind-the-gap.svg" alt="map icon" class="map-map">
@@ -310,9 +310,9 @@
                         </p>
                         <div class="modal-buttons">
                             <button class="modal-button modal-button-close">
-                                <div class="modal-button-icon-container">
+                                <span class="modal-button-icon-container">
                                     <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
-                                </div>
+                                </span>
                                 <span class="modal-return modal-button-description">Return</span>
                             </button>
                             <button class="modal-close">
@@ -323,7 +323,7 @@
                 </div>
             </li>
             <li id="project-4" class="project">
-                <div class="preview-container">
+                <div tabindex="0" class="preview-container">
                     <div class="preview-content">
                         <div class="insight-ubc-icon icon">
                             <img src="./images/icon-insight-ubc.svg" alt="insight UBC webpage" class="insight-ubc">
@@ -387,9 +387,9 @@
                         </p>
                         <div class="modal-buttons">
                             <button class="modal-button modal-button-close">
-                                <div class="modal-button-icon-container">
+                                <span class="modal-button-icon-container">
                                     <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
-                                </div>
+                                </span>
                                 <span class="modal-return modal-button-description">Return</span>
                             </button>
                             <button class="modal-close">
@@ -400,7 +400,7 @@
                 </div>
             </li>
             <li id="project-5" class="project">
-                <div class="preview-container">
+                <div tabindex="0" class="preview-container">
                     <div class="preview-content">
                         <div class="grocery-management-icon icon">
                             <img src="./images/icon-gsms.svg" alt="grocery management icon" class="gsms-background">
@@ -463,9 +463,9 @@
                         </p>
                         <div class="modal-buttons">
                             <button class="modal-button modal-button-close">
-                                <div class="modal-button-icon-container">
+                                <span class="modal-button-icon-container">
                                     <span class="fas fa-arrow-left modal-button-icon" aria-hidden="true"></span>
-                                </div>
+                                </span>
                                 <span class="modal-return modal-button-description">Return</span>
                             </button>
                             <button class="modal-close">

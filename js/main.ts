@@ -6,41 +6,55 @@ function init(): void {
         navBar();
         displayChart();
         smoothScroll();
-        expandProject();
         collapseProject();
         setAspectRatio();
         clickResume();
+        previewContainerClick();
+        previewContainerPress();
 
         $(window).resize(function (): void {
-            setAspectRatio();
-        });
-
-        $(window).on("click", function (): void {
             setAspectRatio();
         });
     });
 }
 
-function expandProject(): void {
-    $(".preview-container").on("click", function (): void {
-        let modalContainer = $(this).parent().find(".modal-container");
-
-        modalContainer.css("display", "flex");
-        currModal = modalContainer.find(".modal-icon-container");
-        $("body").addClass("overflow-hidden");
+function previewContainerClick(): void {
+    $(".preview-container").on("click", function (e): void {
+        expandProject(e, $(this));
     });
+}
+
+function previewContainerPress() {
+    $(".preview-container").keydown(function (e): void {
+        if (e.key === " " || e.key === "Enter") {
+            e.preventDefault();
+            expandProject(e, $(this));
+        }
+    })
+}
+
+function expandProject(e, that): void {
+    let modalContainer = that.parent().find(".modal-container");
+
+    toggleButton(e.target);
+    modalContainer.css("display", "flex");
+    currModal = modalContainer.find(".modal-icon-container");
+    $("body").addClass("overflow-hidden");
+    setAspectRatio();
 }
 
 function collapseProject(): void {
     $(".modal-return, .modal-button-close, .modal-button-icon-container, .modal-button-icon, .modal-close").on("click", function (): void {
         $(".modal-container").css("display", "none");
         $("body").removeClass("overflow-hidden");
+        setAspectRatio();
     });
 
     $(document).keyup(function (e): void {
         if (e.keyCode === 27) {
             $(".modal-container").css("display", "none");
             $("body").removeClass("overflow-hidden");
+            setAspectRatio();
         }
     });
 }
@@ -160,3 +174,9 @@ function clickResume(): void {
 window.onload = function () {
     init();
 };
+
+function toggleButton(element) {
+    let pressed = (element.getAttribute("aria-pressed") === "true");
+
+    element.setAttribute("aria-pressed", !pressed);
+}

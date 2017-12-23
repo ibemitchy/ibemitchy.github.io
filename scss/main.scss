@@ -20,7 +20,7 @@ nav {
 
     a {
         align-items: center;
-        color: rgb(100, 100, 100);
+        color: rgba(100, 100, 100, 1);
         display: flex;
         flex: 1 1 0;
         font-variant: small-caps;
@@ -59,7 +59,6 @@ nav {
 
 .mini-nav {
     height: $nav-bar-height / 2.5;
-    @include unselectable();
 
     a {
         background: rgba(0, 0, 0, 0.8);
@@ -193,7 +192,6 @@ section {
                 font: inherit;
                 height: 100%;
                 justify-content: center;
-                outline: inherit;
                 padding: 0;
                 width: 100%;
             }
@@ -236,6 +234,7 @@ section {
                 .preview-container {
                     cursor: pointer;
                     display: flex;
+                    height: 100%;
                     flex-flow: column nowrap;
 
                     .preview-content {
@@ -346,7 +345,6 @@ section {
                             align-items: center;
                             display: flex;
                             flex-flow: row wrap;
-                            height: 3em;
                             justify-content: center;
                             width: 100%;
 
@@ -359,11 +357,10 @@ section {
                                 flex: 1 1 0;
                                 flex-flow: row nowrap;
                                 font: inherit;
-                                height: 100%;
+                                height: 3em;
                                 justify-content: center;
                                 margin: 0 1em;
                                 max-width: 10em;
-                                outline: inherit;
                                 overflow: hidden;
                             }
 
@@ -376,7 +373,6 @@ section {
                                 font-size: 1.5em;
                                 height: 1.25em;
                                 justify-content: center;
-                                outline: inherit;
                             }
                         }
                     }

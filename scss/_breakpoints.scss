@@ -75,30 +75,51 @@
                 position: relative;
 
                 .modal-button-icon-container, .modal-button-description {
+                    @include animate($animation-speed);
                     position: absolute;
+
+                    &:hover {
+                        @include animate($animation-speed);
+                    }
                 }
 
                 .modal-button-description {
-                    @include animate($animation-speed);
-                    transform: translate(0%, 0%);
+                    @include translate(0%, 0%);
                 }
 
 
                 .modal-button-icon-container {
-                    @include animate($animation-speed);
-
-                    transform: translate(0%, -200%);
+                    @include translate(0%, -200%);
                 }
 
-                &:hover {
-                    @include animate($animation-speed);
-
+                &:hover, &:focus {
                     .modal-button-description {
-                        transform: translate(0%, 200%);
+                        @include translate(0%, 200%);
                     }
 
                     .modal-button-icon-container {
-                        transform: translate(0%, 0%);
+                        @include translate(0%, 0%);
+                    }
+                }
+            }
+
+            a {
+                .modal-button-description {
+                    @include translate(50%, 50%);
+                }
+
+
+                .modal-button-icon-container {
+                    @include translate(0%, -200%);
+                }
+
+                &:hover {
+                    .modal-button-description {
+                        @include translate(0%, 200%);
+                    }
+
+                    .modal-button-icon-container {
+                        @include translate(0%, 0%);
                     }
                 }
             }
@@ -146,7 +167,7 @@
         #bitbucket {
             overflow: hidden;
 
-            &:hover {
+            &:hover, &:focus {
                 width: 10em;
 
                 .fa-bitbucket {
@@ -164,7 +185,7 @@
         #email {
             overflow: hidden;
 
-            &:hover {
+            &:hover, &:focus {
                 width: 14em;
 
                 .fa-envelope {

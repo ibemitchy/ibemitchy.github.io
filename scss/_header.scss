@@ -37,24 +37,22 @@ $bitbucket-color: rgba(38, 132, 255, 1);
 $bitbucket-color-o: rgba(38, 132, 255, 0);
 $facebook-color: rgba(59, 89, 152, 1);
 $email-color: rgba(255, 120, 0, 1);
-$email-color-0: rgba(255, 120, 0, 0);
-
-@font-face {
-    font-family: fab;
-    src: url("../fonts/fa-brands-400.woff");
-}
-
-@font-face {
-    font-family: fas;
-    src: url("../fonts/fa-solid-900.woff");
-}
+$email-color-o: rgba(255, 120, 0, 0);
 
 @mixin animate($speed) {
+    -webkit-transition: all $speed;
     -moz-transition: all $speed;
     -ms-transition: all $speed;
     -o-transition: all $speed;
-    -webkit-transition: all $speed;
     transition: all $speed;
+}
+
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    transform: translate($x, $y);
 }
 
 @mixin unselectable() {

@@ -2,12 +2,6 @@
 /* Experience */
 /* Projects */
 /* Contact */
-@font-face {
-  font-family: fab;
-  src: url("../fonts/fa-brands-400.woff"); }
-@font-face {
-  font-family: fas;
-  src: url("../fonts/fa-solid-900.woff"); }
 /* Icon Animations ****************************************************************************************************/
 /* Website */
 /* Games */
@@ -20,10 +14,10 @@ body {
 
 /* Navigation *********************************************************************************************************/
 nav {
+  -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   display: flex;
   flex-flow: row nowrap;
@@ -42,10 +36,10 @@ nav {
     justify-content: center;
     overflow: hidden;
     text-decoration: none;
+    -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s; }
   nav a[href="#home"]:hover {
     background: #fcad26; }
@@ -70,13 +64,7 @@ nav {
     display: none; }
 
 .mini-nav {
-  height: 2.4rem;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  height: 2.4rem; }
   .mini-nav a {
     background: rgba(0, 0, 0, 0.8);
     color: white; }
@@ -176,7 +164,6 @@ section {
       font: inherit;
       height: 100%;
       justify-content: center;
-      outline: inherit;
       padding: 0;
       width: 100%; }
     #experience .section-content #experience-resume a {
@@ -205,19 +192,19 @@ section {
       #projects .section-content .projs #project-1 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-1 .modal-container .modal-content .modal-subtitle {
         color: #c25ae1; }
       #projects .section-content .projs #project-1 .modal-container .modal-content .modal-buttons .modal-button {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         background: #c25ae1;
         color: white;
         opacity: 0.8; }
         #projects .section-content .projs #project-1 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           -ms-transition: all 0.3s;
           -o-transition: all 0.3s;
-          -webkit-transition: all 0.3s;
           transition: all 0.3s;
           background: #c25ae1;
           opacity: 1; }
@@ -228,19 +215,19 @@ section {
       #projects .section-content .projs #project-2 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-2 .modal-container .modal-content .modal-subtitle {
         color: #c25ae1; }
       #projects .section-content .projs #project-2 .modal-container .modal-content .modal-buttons .modal-button {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         background: #c25ae1;
         color: white;
         opacity: 0.8; }
         #projects .section-content .projs #project-2 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           -ms-transition: all 0.3s;
           -o-transition: all 0.3s;
-          -webkit-transition: all 0.3s;
           transition: all 0.3s;
           background: #c25ae1;
           opacity: 1; }
@@ -251,19 +238,19 @@ section {
       #projects .section-content .projs #project-3 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-3 .modal-container .modal-content .modal-subtitle {
         color: #c25ae1; }
       #projects .section-content .projs #project-3 .modal-container .modal-content .modal-buttons .modal-button {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         background: #c25ae1;
         color: white;
         opacity: 0.8; }
         #projects .section-content .projs #project-3 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           -ms-transition: all 0.3s;
           -o-transition: all 0.3s;
-          -webkit-transition: all 0.3s;
           transition: all 0.3s;
           background: #c25ae1;
           opacity: 1; }
@@ -274,19 +261,19 @@ section {
       #projects .section-content .projs #project-4 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-4 .modal-container .modal-content .modal-subtitle {
         color: #c25ae1; }
       #projects .section-content .projs #project-4 .modal-container .modal-content .modal-buttons .modal-button {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         background: #c25ae1;
         color: white;
         opacity: 0.8; }
         #projects .section-content .projs #project-4 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           -ms-transition: all 0.3s;
           -o-transition: all 0.3s;
-          -webkit-transition: all 0.3s;
           transition: all 0.3s;
           background: #c25ae1;
           opacity: 1; }
@@ -297,19 +284,19 @@ section {
       #projects .section-content .projs #project-5 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-5 .modal-container .modal-content .modal-subtitle {
         color: #c25ae1; }
       #projects .section-content .projs #project-5 .modal-container .modal-content .modal-buttons .modal-button {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         background: #c25ae1;
         color: white;
         opacity: 0.8; }
         #projects .section-content .projs #project-5 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           -ms-transition: all 0.3s;
           -o-transition: all 0.3s;
-          -webkit-transition: all 0.3s;
           transition: all 0.3s;
           background: #c25ae1;
           opacity: 1; }
@@ -318,6 +305,7 @@ section {
     #projects .section-content .projs .project .preview-container {
       cursor: pointer;
       display: flex;
+      height: 100%;
       flex-flow: column nowrap; }
       #projects .section-content .projs .project .preview-container .preview-content {
         align-items: center;
@@ -396,7 +384,6 @@ section {
           align-items: center;
           display: flex;
           flex-flow: row wrap;
-          height: 3em;
           justify-content: center;
           width: 100%; }
           #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-button {
@@ -408,11 +395,10 @@ section {
             flex: 1 1 0;
             flex-flow: row nowrap;
             font: inherit;
-            height: 100%;
+            height: 3em;
             justify-content: center;
             margin: 0 1em;
             max-width: 10em;
-            outline: inherit;
             overflow: hidden; }
           #projects .section-content .projs .project .modal-container .modal-content .modal-buttons .modal-close {
             align-items: center;
@@ -422,8 +408,7 @@ section {
             display: flex;
             font-size: 1.5em;
             height: 1.25em;
-            justify-content: center;
-            outline: inherit; }
+            justify-content: center; }
 
 ul {
   list-style: none;
@@ -695,10 +680,10 @@ a {
     max-width: 20em;
     max-height: 12em; }
     #projects > .section-content > .projs > .project .preview-container .preview-content > .preview-overlay {
+      -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
       transition: all 0.3s;
       left: 0;
       opacity: 0;
@@ -724,56 +709,91 @@ a {
     #projects > .section-content > .projs > .project .preview-container:hover {
       cursor: pointer; }
       #projects > .section-content > .projs > .project .preview-container:hover .preview-content .icon {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         -webkit-filter: blur(3px);
         filter: blur(3px); }
       #projects > .section-content > .projs > .project .preview-container:hover .preview-content .preview-overlay {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         opacity: 1; }
   #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons {
     margin: 2em 0 5em 0; }
     #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button {
+      -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
       transition: all 0.3s;
       width: 5em;
       position: relative; }
       #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button .modal-button-icon-container, #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button .modal-button-description {
-        position: absolute; }
-      #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button .modal-button-description {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
+        position: absolute; }
+        #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button .modal-button-icon-container:hover, #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button .modal-button-description:hover {
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+      #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button .modal-button-description {
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
         transform: translate(0%, 0%); }
       #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button .modal-button-icon-container {
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
+        -webkit-transform: translate(0%, -200%);
+        -moz-transform: translate(0%, -200%);
+        -ms-transform: translate(0%, -200%);
+        -o-transform: translate(0%, -200%);
         transform: translate(0%, -200%); }
-      #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button:hover {
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s; }
-        #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button:hover .modal-button-description {
-          transform: translate(0%, 200%); }
-        #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button:hover .modal-button-icon-container {
-          transform: translate(0%, 0%); }
+      #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button:hover .modal-button-description, #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button:focus .modal-button-description {
+        -webkit-transform: translate(0%, 200%);
+        -moz-transform: translate(0%, 200%);
+        -ms-transform: translate(0%, 200%);
+        -o-transform: translate(0%, 200%);
+        transform: translate(0%, 200%); }
+      #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button:hover .modal-button-icon-container, #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button:focus .modal-button-icon-container {
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        transform: translate(0%, 0%); }
+    #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons a .modal-button-description {
+      -webkit-transform: translate(50%, 50%);
+      -moz-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+      -o-transform: translate(50%, 50%);
+      transform: translate(50%, 50%); }
+    #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons a .modal-button-icon-container {
+      -webkit-transform: translate(0%, -200%);
+      -moz-transform: translate(0%, -200%);
+      -ms-transform: translate(0%, -200%);
+      -o-transform: translate(0%, -200%);
+      transform: translate(0%, -200%); }
+    #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons a:hover .modal-button-description {
+      -webkit-transform: translate(0%, 200%);
+      -moz-transform: translate(0%, 200%);
+      -ms-transform: translate(0%, 200%);
+      -o-transform: translate(0%, 200%);
+      transform: translate(0%, 200%); }
+    #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons a:hover .modal-button-icon-container {
+      -webkit-transform: translate(0%, 0%);
+      -moz-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+      -o-transform: translate(0%, 0%);
+      transform: translate(0%, 0%); }
     #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-close {
       border-radius: 50%;
       cursor: pointer;
@@ -795,10 +815,10 @@ a {
   #contact > .contact-item a {
     position: relative; }
     #contact > .contact-item a .fab, #contact > .contact-item a .far {
+      -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
       transition: all 0.3s;
       opacity: 1;
       position: absolute; }
@@ -807,38 +827,38 @@ a {
       position: absolute; }
   #contact > .contact-item #bitbucket {
     overflow: hidden; }
-    #contact > .contact-item #bitbucket:hover {
+    #contact > .contact-item #bitbucket:hover, #contact > .contact-item #bitbucket:focus {
       width: 10em; }
-      #contact > .contact-item #bitbucket:hover .fa-bitbucket {
+      #contact > .contact-item #bitbucket:hover .fa-bitbucket, #contact > .contact-item #bitbucket:focus .fa-bitbucket {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         opacity: 0; }
-      #contact > .contact-item #bitbucket:hover .contact-string {
+      #contact > .contact-item #bitbucket:hover .contact-string, #contact > .contact-item #bitbucket:focus .contact-string {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         opacity: 1; }
   #contact > .contact-item #email {
     overflow: hidden; }
-    #contact > .contact-item #email:hover {
+    #contact > .contact-item #email:hover, #contact > .contact-item #email:focus {
       width: 14em; }
-      #contact > .contact-item #email:hover .fa-envelope {
+      #contact > .contact-item #email:hover .fa-envelope, #contact > .contact-item #email:focus .fa-envelope {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         opacity: 0; }
-      #contact > .contact-item #email:hover .contact-string {
+      #contact > .contact-item #email:hover .contact-string, #contact > .contact-item #email:focus .contact-string {
+        -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
         transition: all 0.3s;
         opacity: 1; } }
 @media (max-width: 34.99em) {
@@ -882,10 +902,10 @@ a {
   #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons {
     margin: 2em 0 5em 0; }
     #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button {
+      -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
       transition: all 0.3s;
       width: 100%; }
       #projects > .section-content > .projs > .project .modal-container > .modal-content > .modal-buttons .modal-button .modal-button-description {
@@ -911,33 +931,33 @@ a {
       margin-left: 0.5em; } }
 @media (min-width: 25em) {
   #experience > .section-content > #experience-resume #resume-button {
+    -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
     background: rgba(34, 111, 190, 0.8); }
     #experience > .section-content > #experience-resume #resume-button:hover {
+      -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
       transition: all 0.3s;
       background: #226fbe; }
   #experience > .section-content > #experience-resume a {
+    -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
     background: rgba(34, 111, 190, 0.8); }
     #experience > .section-content > #experience-resume a .resume-string {
       margin-left: 0.5em; }
     #experience > .section-content > #experience-resume a:hover {
+      -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
       transition: all 0.3s;
       background: #226fbe; }
   #experience > .section-content > #experience-resume #view-resume:hover .fa-eye {
@@ -946,17 +966,17 @@ a {
     animation: animateShake 0.25s linear; } }
 @media (max-width: 24.99em) {
   #experience > .section-content > #experience-resume #resume-button {
+    -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
     background: rgba(34, 111, 190, 0.8); }
   #experience > .section-content > #experience-resume a {
+    -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
     background: rgba(34, 111, 190, 0.8); }
     #experience > .section-content > #experience-resume a .resume-string {
