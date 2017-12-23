@@ -13,213 +13,6 @@
 /* Games */
 /* Mind the Gap */
 /* InsightUBC */
-/* Experience *********************************************************************************************************/
-@keyframes animateShake {
-  0% {
-    transform: translate(0%, 0%); }
-  25% {
-    transform: translate(0%, 25%); }
-  75% {
-    transform: translate(0%, -25%); }
-  100% {
-    transform: translate(0%, 0%); } }
-/* Projects ***********************************************************************************************************/
-/* Website */
-.webpage-cursor {
-  transform: translate(-15%, -45%) rotate(-45deg) scale(0.1);
-  animation: animateCursor 5s linear infinite; }
-
-@keyframes animateCursor {
-  0% {
-    transform: translate(60%, -10%) rotate(-45deg) scale(0.1); }
-  10% {
-    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
-  24% {
-    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
-  27% {
-    transform: translate(8%, -30%) rotate(-45deg) scale(0.075); }
-  30% {
-    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
-  40% {
-    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
-  52.5% {
-    transform: translate(-20%, 10%) rotate(-45deg) scale(0.1); }
-  100% {
-    transform: translate(-20%, 10%) rotate(-45deg) scale(0.1); } }
-/* Games */
-.game-icon .game-invader-A {
-  animation: animateInvaderA 4s linear infinite;
-  transform: scale(0.5) translate(40%, -30%);
-  opacity: 1; }
-.game-icon .game-invader-B {
-  animation: animateInvaderB 4s linear infinite;
-  transform: scale(0.5) translate(40%, -30%);
-  opacity: 0; }
-.game-icon .game-paddle {
-  transform: scale(0.3) translate(-90%, 600%); }
-.game-icon .game-ball {
-  animation: animateBall 7s linear infinite;
-  transform: scale(0.12) translate(-1500%, -600%); }
-
-@keyframes animateInvaderA {
-  0% {
-    opacity: 1; }
-  25% {
-    opacity: 1; }
-  25.1% {
-    opacity: 0; }
-  50% {
-    opacity: 0; }
-  50.1% {
-    opacity: 1; }
-  75% {
-    opacity: 1; }
-  75.1% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-@keyframes animateInvaderB {
-  0% {
-    opacity: 0; }
-  25% {
-    opacity: 0; }
-  25.1% {
-    opacity: 1; }
-  50% {
-    opacity: 1; }
-  50.1% {
-    opacity: 0; }
-  75% {
-    opacity: 0; }
-  75.1% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-@keyframes animateBall {
-  0% {
-    transform: translate(-60%, -60%) scale(0.12) rotate(0deg); }
-  20% {
-    transform: translate(-27.5%, -12.5%) scale(0.12) rotate(360deg); }
-  40% {
-    transform: translate(5%, -60%) scale(0.12) rotate(720deg); }
-  100% {
-    transform: translate(5%, -60%) scale(0.12) rotate(720deg); } }
-/* Mind the Gap */
-.mind-the-gap-icon .map-pointer-1 {
-  animation: animatePointer1 3s linear infinite;
-  transform-origin: 50% 100%;
-  -webkit-transform-origin: 50% 100%;
-  -moz-transform-origin: 50% 100%;
-  -o-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%; }
-.mind-the-gap-icon .map-pointer-2 {
-  animation: animatePointer2 3s linear infinite;
-  transform-origin: 50% 100%;
-  -webkit-transform-origin: 50% 100%;
-  -moz-transform-origin: 50% 100%;
-  -o-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%; }
-.mind-the-gap-icon .map-pointer-3 {
-  animation: animatePointer3 3s linear infinite;
-  transform-origin: 50% 100%;
-  -webkit-transform-origin: 50% 100%;
-  -moz-transform-origin: 50% 100%;
-  -o-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%; }
-
-@keyframes animatePointer1 {
-  0% {
-    transform: translate(-26%, calc(-83% - 40%)) scale(0.15); }
-  10% {
-    transform: translate(-26%, -83%) scale(0.15); }
-  12.5% {
-    transform: translate(-26%, -83%) scaleY(0.1) scaleX(0.2); }
-  15% {
-    transform: translate(-26%, -83%) scaleY(0.17) scaleX(0.13); }
-  17.5% {
-    transform: translate(-26%, -83%) scale(0.15); }
-  100% {
-    transform: translate(-26%, -83%) scale(0.15); } }
-@keyframes animatePointer2 {
-  0% {
-    transform: translate(35%, calc(-86.5% - 40%)) scale(0.15); }
-  5% {
-    transform: translate(35%, calc(-86.5% - 40%)) scale(0.15); }
-  15% {
-    transform: translate(35%, -86.5%) scale(0.15); }
-  17.5% {
-    transform: translate(35%, -86.5%) scaleY(0.1) scaleX(0.2); }
-  20% {
-    transform: translate(35%, -86.5%) scaleY(0.17) scaleX(0.13); }
-  22.5% {
-    transform: translate(35%, -86.5%) scale(0.15); }
-  100% {
-    transform: translate(35%, -86.5%) scale(0.15); } }
-@keyframes animatePointer3 {
-  0% {
-    transform: translate(11%, calc(-69.5% - 40%)) scale(0.15); }
-  8% {
-    transform: translate(11%, calc(-69.5% - 40%)) scale(0.15); }
-  18.5% {
-    transform: translate(11%, -69.5%) scale(0.15); }
-  21% {
-    transform: translate(11%, -69.5%) scaleY(0.1) scaleX(0.2); }
-  23.5% {
-    transform: translate(11%, -69.5%) scaleY(0.17) scaleX(0.13); }
-  26% {
-    transform: translate(11%, -69.5%) scale(0.15); }
-  100% {
-    transform: translate(11%, -69.5%) scale(0.15); } }
-/* InsightUBC */
-.insight-ubc-icon .insight-load-1 {
-  animation: animateLoad1 3s linear infinite;
-  transform: translate(-10%, 0%) scale(0.03); }
-.insight-ubc-icon .insight-load-2 {
-  animation: animateLoad2 3s linear infinite;
-  transform: translate(0%, 0%) scale(0.03); }
-.insight-ubc-icon .insight-load-3 {
-  animation: animateLoad3 3s linear infinite;
-  transform: translate(10%, 0%) scale(0.03); }
-
-@keyframes animateLoad1 {
-  10% {
-    transform: translate(-10%, 0%) scale(0.03); }
-  15% {
-    transform: translate(-10%, 0%) scale(0.06); }
-  20% {
-    transform: translate(-10%, 0%) scale(0.03); } }
-@keyframes animateLoad2 {
-  12.5% {
-    transform: translate(0%, 0%) scale(0.03); }
-  17.5% {
-    transform: translate(0%, 0%) scale(0.06); }
-  22.5% {
-    transform: translate(0%, 0%) scale(0.03); } }
-@keyframes animateLoad3 {
-  15% {
-    transform: translate(10%, 0%) scale(0.03); }
-  20% {
-    transform: translate(10%, 0%) scale(0.06); }
-  25% {
-    transform: translate(10%, 0%) scale(0.03); } }
-/* GSMS */
-.grocery-management-icon .gsms-database {
-  transform: translate(0%, -31%) scale(0.2); }
-.grocery-management-icon .gsms-glow {
-  transform: translate(0%, 15%) scale(0.2);
-  animation: animateGlow 4s linear infinite; }
-
-@keyframes animateGlow {
-  0% {
-    transform: translate(0%, 13%) scale(0.2); }
-  40% {
-    transform: translate(0%, 72%) scale(0.2); }
-  50% {
-    transform: translate(0%, 72%) scale(0.2); }
-  90% {
-    transform: translate(0%, 13%) scale(0.2); }
-  100% {
-    transform: translate(0%, 13%) scale(0.2); } }
 body {
   font: 100% Helvetica, sans-serif;
   padding: 0;
@@ -651,7 +444,9 @@ a {
   justify-content: center;
   margin: auto; }
   #contact .contact-title {
-    margin: 1em 0 1em 0; }
+    font-size: calc(1.96429vw + 26.5px);
+    font-variant: small-caps;
+    margin: 1em 0 0.5em 0; }
     #contact .contact-title .highlight {
       color: #e65a5a; }
   #contact .contact-item {
@@ -677,12 +472,220 @@ a {
       color: #ff7800; }
   #contact .footer {
     font-size: 0.5em;
-    margin: 2em 0 1em 0; }
+    margin: 2em 0 1em 0;
+    text-align: center; }
 
 .overflow-hidden {
   overflow: hidden; }
 
-@media (min-width: 35em) and (max-resolution: 192dpi) {
+/* Experience *********************************************************************************************************/
+@keyframes animateShake {
+  0% {
+    transform: translate(0%, 0%); }
+  25% {
+    transform: translate(0%, 25%); }
+  75% {
+    transform: translate(0%, -25%); }
+  100% {
+    transform: translate(0%, 0%); } }
+/* Projects ***********************************************************************************************************/
+/* Website */
+.webpage-cursor {
+  transform: translate(-15%, -45%) rotate(-45deg) scale(0.1);
+  animation: animateCursor 5s linear infinite; }
+
+@keyframes animateCursor {
+  0% {
+    transform: translate(60%, -10%) rotate(-45deg) scale(0.1); }
+  10% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
+  24% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
+  27% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.075); }
+  30% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
+  40% {
+    transform: translate(8%, -30%) rotate(-45deg) scale(0.1); }
+  52.5% {
+    transform: translate(-20%, 10%) rotate(-45deg) scale(0.1); }
+  100% {
+    transform: translate(-20%, 10%) rotate(-45deg) scale(0.1); } }
+/* Games */
+.game-icon .game-invader-A {
+  animation: animateInvaderA 4s linear infinite;
+  transform: scale(0.5) translate(40%, -30%);
+  opacity: 1; }
+.game-icon .game-invader-B {
+  animation: animateInvaderB 4s linear infinite;
+  transform: scale(0.5) translate(40%, -30%);
+  opacity: 0; }
+.game-icon .game-paddle {
+  transform: scale(0.3) translate(-90%, 600%); }
+.game-icon .game-ball {
+  animation: animateBall 7s linear infinite;
+  transform: scale(0.12) translate(-1500%, -600%); }
+
+@keyframes animateInvaderA {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  25.1% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  50.1% {
+    opacity: 1; }
+  75% {
+    opacity: 1; }
+  75.1% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes animateInvaderB {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  25.1% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  50.1% {
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  75.1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes animateBall {
+  0% {
+    transform: translate(-60%, -60%) scale(0.12) rotate(0deg); }
+  20% {
+    transform: translate(-27.5%, -12.5%) scale(0.12) rotate(360deg); }
+  40% {
+    transform: translate(5%, -60%) scale(0.12) rotate(720deg); }
+  100% {
+    transform: translate(5%, -60%) scale(0.12) rotate(720deg); } }
+/* Mind the Gap */
+.mind-the-gap-icon .map-pointer-1 {
+  animation: animatePointer1 3s linear infinite;
+  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%; }
+.mind-the-gap-icon .map-pointer-2 {
+  animation: animatePointer2 3s linear infinite;
+  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%; }
+.mind-the-gap-icon .map-pointer-3 {
+  animation: animatePointer3 3s linear infinite;
+  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%; }
+
+@keyframes animatePointer1 {
+  0% {
+    transform: translate(-26%, calc(-83% - 40%)) scale(0.15); }
+  10% {
+    transform: translate(-26%, -83%) scale(0.15); }
+  12.5% {
+    transform: translate(-26%, -83%) scaleY(0.1) scaleX(0.2); }
+  15% {
+    transform: translate(-26%, -83%) scaleY(0.17) scaleX(0.13); }
+  17.5% {
+    transform: translate(-26%, -83%) scale(0.15); }
+  100% {
+    transform: translate(-26%, -83%) scale(0.15); } }
+@keyframes animatePointer2 {
+  0% {
+    transform: translate(35%, calc(-86.5% - 40%)) scale(0.15); }
+  5% {
+    transform: translate(35%, calc(-86.5% - 40%)) scale(0.15); }
+  15% {
+    transform: translate(35%, -86.5%) scale(0.15); }
+  17.5% {
+    transform: translate(35%, -86.5%) scaleY(0.1) scaleX(0.2); }
+  20% {
+    transform: translate(35%, -86.5%) scaleY(0.17) scaleX(0.13); }
+  22.5% {
+    transform: translate(35%, -86.5%) scale(0.15); }
+  100% {
+    transform: translate(35%, -86.5%) scale(0.15); } }
+@keyframes animatePointer3 {
+  0% {
+    transform: translate(11%, calc(-69.5% - 40%)) scale(0.15); }
+  8% {
+    transform: translate(11%, calc(-69.5% - 40%)) scale(0.15); }
+  18.5% {
+    transform: translate(11%, -69.5%) scale(0.15); }
+  21% {
+    transform: translate(11%, -69.5%) scaleY(0.1) scaleX(0.2); }
+  23.5% {
+    transform: translate(11%, -69.5%) scaleY(0.17) scaleX(0.13); }
+  26% {
+    transform: translate(11%, -69.5%) scale(0.15); }
+  100% {
+    transform: translate(11%, -69.5%) scale(0.15); } }
+/* InsightUBC */
+.insight-ubc-icon .insight-load-1 {
+  animation: animateLoad1 3s linear infinite;
+  transform: translate(-10%, 0%) scale(0.03); }
+.insight-ubc-icon .insight-load-2 {
+  animation: animateLoad2 3s linear infinite;
+  transform: translate(0%, 0%) scale(0.03); }
+.insight-ubc-icon .insight-load-3 {
+  animation: animateLoad3 3s linear infinite;
+  transform: translate(10%, 0%) scale(0.03); }
+
+@keyframes animateLoad1 {
+  10% {
+    transform: translate(-10%, 0%) scale(0.03); }
+  15% {
+    transform: translate(-10%, 0%) scale(0.06); }
+  20% {
+    transform: translate(-10%, 0%) scale(0.03); } }
+@keyframes animateLoad2 {
+  12.5% {
+    transform: translate(0%, 0%) scale(0.03); }
+  17.5% {
+    transform: translate(0%, 0%) scale(0.06); }
+  22.5% {
+    transform: translate(0%, 0%) scale(0.03); } }
+@keyframes animateLoad3 {
+  15% {
+    transform: translate(10%, 0%) scale(0.03); }
+  20% {
+    transform: translate(10%, 0%) scale(0.06); }
+  25% {
+    transform: translate(10%, 0%) scale(0.03); } }
+/* GSMS */
+.grocery-management-icon .gsms-database {
+  transform: translate(0%, -31%) scale(0.2); }
+.grocery-management-icon .gsms-glow {
+  transform: translate(0%, 15%) scale(0.2);
+  animation: animateGlow 4s linear infinite; }
+
+@keyframes animateGlow {
+  0% {
+    transform: translate(0%, 13%) scale(0.2); }
+  40% {
+    transform: translate(0%, 72%) scale(0.2); }
+  50% {
+    transform: translate(0%, 72%) scale(0.2); }
+  90% {
+    transform: translate(0%, 13%) scale(0.2); }
+  100% {
+    transform: translate(0%, 13%) scale(0.2); } }
+@media (min-width: 35em) {
   #projects > .section-content > .projs > .project .preview-container {
     border: #c25ae1 solid 0.5em;
     flex-flow: column nowrap;
@@ -838,7 +841,7 @@ a {
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
         opacity: 1; } }
-@media (max-width: 35em), (min-resolution: 192dpi) {
+@media (max-width: 34.99em) {
   .big-nav {
     background: rgba(0, 0, 0, 0.25);
     height: 4rem; }
@@ -941,7 +944,7 @@ a {
     animation: animateShake 0.25s linear; }
   #experience > .section-content > #experience-resume #download-resume:hover .fa-download {
     animation: animateShake 0.25s linear; } }
-@media (max-width: 25em) {
+@media (max-width: 24.99em) {
   #experience > .section-content > #experience-resume #resume-button {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
