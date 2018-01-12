@@ -170,13 +170,12 @@ function clickResume(): void {
         $(".experience-button").css("display", "flex");
     });
 }
+function toggleButton(element) {
+    let pressed: boolean = element.getAttribute("aria-pressed") === "true";
+
+    element.setAttribute("aria-pressed", (!pressed).toString());
+}
 
 window.onload = function () {
     init();
 };
-
-function toggleButton(element) {
-    let pressed = (element.getAttribute("aria-pressed") === "true");
-
-    element.setAttribute("aria-pressed", !pressed);
-}
