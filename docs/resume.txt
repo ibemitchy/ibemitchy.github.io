@@ -1,0 +1,44 @@
+MitchellMa
+604.445.2665 | mitchellma0427@hotmail.com | mitchma.bitbucket.io
+EDUCATION
+UNIVERSITY OF BRITISH COLUMBIA | BSC IN MATHEMATICS AND COMPUTER SCIENCE
+September 2014 - May 2019 | Vancouver, BC
+VOLUNTEER & WORK
+KILLARNEY COMMUNITY CENTER | ACTIVITIES AND EVENTS ASSISTANT
+December 2010 – June 2014 | Vancouver, BC
+• Volunteered in helping the center run various programs ranging from soccer to computer labs targeted at youth
+TUTOR
+September 2013 – Present
+• Specialize in teaching mathematics and computer science (up to third year university level)
+TEACHING ASSISTANT | MATH TA AT UBC
+September 2016 – May 2017
+• Responsible for assignment, midterm, and exam grading and office hours for first and second year courses
+PROJECTS
+MINDTHEGAP | ANDROID APPLICATION FOR LONDON’S TRANSIT SYSTEM
+July 2016 – August 2016 | Solo | Java
+• Implemented parser for London’s transit API that transforms JSON and XML into displayable data for the UI
+• Partially coded up UI that marks out transit lines and station locations while providing information such as train schedules
+INSIGHTUBC | COURSE AND BUILDING EXPLORER FOR UBC
+January 2017 – April 2017 | 2 members | HTML • SCSS • Typescript
+• Implemented RESTful API that transforms UBCPair zip data and extensively tested code base with Mocha
+• Coded server that acts as a rudimentary database for manipulating zip data using user provided queries
+GSMS | GROCERY STORE MANAGEMENT SYSTEM
+September 2017 – December 2017 | 4 members | HTML • SCSS • Typescript • (PL/)SQL
+• Using ERDs, designed BCNF database suitable for grocery-related queries and operations
+• Wrote front end webpage and RESTful server that parse and manipulate information stored in Oracle database
+POSTME | MOBILE APP TO POST ANYTHING LOCALLY
+December 2017 – Present | 2 members | React Native • Java • Swift • SQL
+• Responsible for Android-side testing and verification
+• Implemented user authentication with Google and Facebook integration using Firebase
+• Wrote RESTful server that stores and retrieves user data, posts, and messages using PostgreSQL
+SCRAPEYARD | CRAWLER AND SCRAPER FOR THE NEW YORK TIMES
+January 2018 - January 2018 | Solo | Python 3 • NoSQL
+• Coded a single-threaded web crawler that runs asynchronously to maximize URL requests
+• Multi-process scraper for reading, transforming, and storing articles in large scale
+TECHNICALSKILLS
+Comfortable with:
+Java•Typescript (Javascript)•Python3•HTML & SCSS (CSS)•Latex
+Familiar with:
+C•C++•Rust•MATLAB•(PL/)SQL•NoSQL•PHP•Assembly•VisualBasic
+I’ve used these before:
+JUnit•Mocha•Jest•Node.js•React Native•Adobe Illustrator•Adobe Photoshop•JetBrains IDE•WordPad
