@@ -229,6 +229,7 @@ section {
             @include setProjEntry(#project-3, $p1c1, $p1c2, $p1c3, $preview-container-border);
             @include setProjEntry(#project-4, $p1c1, $p1c2, $p1c3, $preview-container-border);
             @include setProjEntry(#project-5, $p1c1, $p1c2, $p1c3, $preview-container-border);
+            @include setProjEntry(#project-6, $p1c1, $p1c2, $p1c3, $preview-container-border);
 
             .project {
                 .preview-container {
@@ -337,8 +338,19 @@ section {
                             }
                         }
 
-                        .modal-subtitle, .modal-description {
+                        .modal-subtitle, .modal-description, .modal-list {
                             align-self: flex-start;
+                        }
+
+                        .modal-picture {
+                            align-self: center;
+                            margin: 0.75em 0 0 0;
+                            width: 85%;
+                        }
+
+                        .modal-list > li {
+                            align-self: flex-start;
+                            margin-left: 2em;
                         }
 
                         .modal-buttons {
