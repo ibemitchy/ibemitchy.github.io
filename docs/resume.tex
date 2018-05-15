@@ -1,9 +1,18 @@
 \documentclass[]{deedy-resume-openfont}
 
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\newcommand{\mylink}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
 \begin{document}
 
 %TITLE NAME
-\namesection{Mitchell}{Ma}{604.445.2665\quad|\quad\href{mailto:mitchellma0427@hotmail.com}{mitchellma0427@hotmail.com}\quad|\quad\urlstyle{same}\url{mitchma.bitbucket.io}}
+\namesection{Mitchell}{Ma}{604.445.2665\quad|\quad\mylink{mailto:mitchellma0427@hotmail.com}{mitchellma0427@hotmail.com}\quad|\quad\mylink{https://mitchma.bitbucket.io/}{mitchma.bitbucket.io}}
 ~\\~\\
 
 %EDUCATION
@@ -23,14 +32,6 @@
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Teaching Assistant}
-\descript{| Math TA at UBC}
-\location{September 2016 – May 2017}
-\begin{tightemize}
-\item Responsible for assignment, midterm, and exam grading and office hours for first and second year courses
-\end{tightemize}
-\sectionsep
-
 %PROJECT
 \section{Projects}
 
@@ -38,8 +39,11 @@
 \descript{| Android application for London's transit system}
 \location{July 2016 – August 2016 | Solo | Java}
 \begin{tightemize}
-\item Implemented parser for London's transit API that transforms JSON and XML into displayable data for the UI
-\item Partially coded up UI that marks out transit lines and station locations while providing information such as train schedules
+\item Implemented parser for London's transit API that transforms JSON and XML holding the transit information
+\item Integrated Google Maps into the Android application
+\item Coded up UI that marks out transit lines and station locations and provides additional information when selected
+\item Created UI pages that show train schedules for the station selected by the user
+\item Tested major functions using JUnit with edge and practical cases
 \end{tightemize}
 \sectionsep
 
@@ -47,8 +51,13 @@
 \descript{| Course and building explorer for UBC}
 \location{January 2017 – April 2017 | 2 members | HTML \textbullet{} SCSS \textbullet{} TypeScript}
 \begin{tightemize}
-\item Implemented RESTful API that transforms UBC Pair zip data and extensively tested code base with Mocha
-\item Coded server that acts as a rudimentary database for manipulating zip data using user provided queries
+\item Created functions to extract and filter out contents from UBC Pair's ZIP data
+\item Implemented ability to cache extracted ZIP data onto local disk as JSON files after removing unnecessary information
+\item Wrote up front end web page that allows users to query UBC's buildings and courses as well as to create course schedules given a subset of courses and buildings
+\item Set up Node server with Restify as middleware for routing HTTP requests
+\item Coded rudimentary database in the server with basic DDL and DML that support custom SQL-like queries with basic match, find, and aggregation
+\item Created functions that transform user searches into queries and displayed search results in friendly manner on front end webpage
+\item Extensively tested the back end using Mocha (mix of edge and practical cases)
 \end{tightemize}
 \sectionsep
 
@@ -56,8 +65,13 @@
 \descript{| Grocery store management system}
 \location{September 2017 – December 2017 | 4 members | HTML \textbullet{} SCSS \textbullet{} TypeScript \textbullet{} (PL/)SQL}
 \begin{tightemize}
-\item Using ERDs, designed BCNF database suitable for grocery-related queries and operations
-\item Wrote front end webpage and RESTful server that parse and manipulate information stored in Oracle database
+\item {\addfontfeature{Color=blue}\href{https://github.com/jonathanwangg/GroceryStoreManagementSystem}{Source code and demo instructions are on GitHub and linked via my website}}
+\item Using ERDs, designed BCNF database suitable for grocery-related queries and operations (applicable for other scenarios)
+\item Coded front end webpage with HTML, SCSS, and JQuery to act as graphical command panel for customers and employees
+\item Wrote RESTful server back end powered by Node that directly receives user input from the front end and sanitizes the data
+\item Set up Node server with Restify as middleware for routing HTTP requests and hooked up server with remotely hosted Oracle database
+\item Implemented and tested the conversion from user input data to SQL statements suitable for Oracle database and tried out PL/SQL for performance improvements
+\item Displayed the database's response in a clear and user-friendly manner in the front end webpage and allowed for further filtering and searching of the returned results
 \end{tightemize}
 \sectionsep
 
@@ -66,8 +80,13 @@
 \location{December 2017 – March 2018 | 2 members | React Native \textbullet{} Java \textbullet{} Swift \textbullet{} SQL}
 \begin{tightemize}
 \item Responsible for Android-side testing and verification
-\item Implemented user authentication with Google and Facebook integration using Firebase
-\item Wrote RESTful server that stores and retrieves user data, posts, and messages using PostgreSQL
+\item Integrated navigation between the sign-in page, main application screen, and settings
+\item Coded up custom, reusable components such as toggles necessary for settings page
+\item Wrote up the messaging UI and system that can send and receive push notifications from server
+\item Implemented user authentication through email, Google, and Facebook using Google's Firebase
+\item Set up RESTful server using Express as middleware for routing HTTP requests and connected server to PostgreSQL database
+\item Server verifies and signs in users, transforms data from user HTTP requests, and stores and retrieves data such as posts and messages from PostgreSQL
+\item Tested some aspects of the code using Jest
 \end{tightemize}
 \sectionsep
 
@@ -75,17 +94,38 @@
 \descript{| Crawler and scraper for The New York Times}
 \location{January 2018 - January 2018 | Solo | Python 3}
 \begin{tightemize}
-\item Coded a single-threaded web crawler that runs asynchronously to maximize URL requests
-\item Multi-process scraper for reading, transforming, and storing articles in large scale
+\item {\addfontfeature{Color=blue}\href{https://bitbucket.org/mitchma/scrapeyard}{Source code is available on Bitbucket and linked via my website}}
+\item Coded single-threaded web crawler that runs asynchronously to maximize URL requests
+\item Included option to limit number of pages crawled as well as speed at which webpages are accessed to allow for long-term, background operation
+\item Implemented multiprocess scraper for loading the websites provided by the crawler and extracts specific information by targeting specific tags in the HTML
+\item Extracted data are transformed into human-friendly JSON files using multiprocess producer-consumer pattern and are stored on disk (also suitable for NoSQL database)
+\item Analyzed performance gains (and surprising performance degradation depending on hardware) of single-threading, asynchronous pattern, and multiprocessing
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Spit! (Global Game Jam 2018)}
+\descript{| Local multiplayer shooter game}
+\location{January 2018 - January 2018 | 5 members | C\#}
+\begin{tightemize}
+\item {\addfontfeature{Color=blue}\href{https://bitbucket.org/mitchma/ggj2018}{Source code is available on Bitbucket and linked via my website}}
+\item Designed and brainstormed game theme and mechanics, resulting in a third-person shooter in which the player helps a mutated monster transmit disease using its infectious, long-range spit (GGJ2018 theme was transmission)
+\item Prototyped game using Unity and tested various features such as movement control and map generation
+\item Coded map and level creation by procedurally generating maze blocks and obstacles
+\item Responsible for randomly spawning power-ups with various effects and interactions with players
+\item Implemented and tested multiplayer using UNet for power-up, map obstacle, and player location synchronization
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Once Upon a Time}
-\descript{| LAN RPG with focus in farming, crafting, and adventuring}
+\descript{| RPG with focus in farming, crafting, and adventuring}
 \location{January 2018 - Present | Solo | GDScript \textbullet{} Python 3 \textbullet{} C++}
 \begin{tightemize}
-\item Coded up system for LAN multiplayer, save, character customization, inventory, environmental interactions, and farming
-\item Created, drew, and rigged all assets using Blender and Illustrator and integrated into game engine
+\item {\addfontfeature{Color=blue}\href{https://mitchma.bitbucket.io/}{Try out the debug copy on my website}}
+\item Responsible for writing up multiplayer code for synchronizing player, item, and map obstacle locations using Godot's ENet
+\item Set up an extremely customizable equipment system in which the player can change the colour of any part of the equipment through RGB sliders
+\item Implemented interactions such as chopping, hammering, and scything various map obstacles as well as basic farming mechanics such as tilling soil and planting seeds
+\item Finished save system that records progress and connected peers by reading and writing JSON to disk
+\item Created, drew, and rigged all assets using Blender and Illustrator and further polished in Godot using shaders and materials
 \end{tightemize}
 \sectionsep
 
@@ -94,7 +134,7 @@
 \location{Familiar with:}
 Java \textbullet{} TypeScript (JavaScript) \textbullet{} Python 3 \textbullet{} HTML \& SCSS (CSS) \textbullet{} \LaTeX \textbullet{} C \textbullet{} C++ \textbullet{} Rust \textbullet{} MATLAB \textbullet{} (PL/)SQL \textbullet{} NoSQL \textbullet{} PHP \textbullet{} Assembly \textbullet{} Visual Basic\\
 \location{I've used these before:}
-JUnit \textbullet{} Mocha \textbullet{} Jest \textbullet{} Node.js \textbullet{} React Native \textbullet{} Adobe Illustrator \textbullet{} Adobe Photoshop \textbullet{} JetBrains IDE \textbullet{} WordPad
+JUnit \textbullet{} Mocha \textbullet{} Jest \textbullet{} Node.js \textbullet{} React Native \textbullet{} Unity \textbullet{} Godot \textbullet{} Adobe Illustrator \textbullet{} Adobe Photoshop \textbullet{} JetBrains IDE \textbullet{} Sublime Text
 \sectionsep
 
 \end{document}

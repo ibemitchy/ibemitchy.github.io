@@ -325,6 +325,29 @@ section {
           opacity: 1; }
       #projects .section-content .projs #project-6 .modal-container .modal-content .modal-buttons .modal-close {
         color: #c25ae1; }
+    #projects .section-content .projs #project-7 .modal-container {
+      background: #823aa0; }
+      #projects .section-content .projs #project-7 .modal-container .modal-content .modal-title, #projects .section-content .projs #project-7 .modal-container .modal-content .modal-subtitle {
+        color: #c25ae1; }
+      #projects .section-content .projs #project-7 .modal-container .modal-content .modal-buttons .modal-button {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        background: #c25ae1;
+        color: white;
+        opacity: 0.8; }
+        #projects .section-content .projs #project-7 .modal-container .modal-content .modal-buttons .modal-button:hover {
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+          background: #c25ae1;
+          opacity: 1; }
+      #projects .section-content .projs #project-7 .modal-container .modal-content .modal-buttons .modal-close {
+        color: #c25ae1; }
     #projects .section-content .projs .project .preview-container {
       cursor: pointer;
       display: flex;
@@ -407,6 +430,10 @@ section {
           align-self: center;
           margin: 0.75em 0 0 0;
           width: 85%; }
+        #projects .section-content .projs .project .modal-container .modal-content .modal-picture-mini {
+          align-self: center;
+          margin: 0.75em 0 0 0;
+          width: 25%; }
         #projects .section-content .projs .project .modal-container .modal-content .modal-list > li {
           align-self: flex-start;
           margin-left: 2em; }
